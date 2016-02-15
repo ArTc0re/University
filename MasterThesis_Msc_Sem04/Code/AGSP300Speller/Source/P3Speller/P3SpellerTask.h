@@ -24,18 +24,19 @@
 // this program.  If not, see <http://www.gnu.org/licenses/>.
 // 
 // $END_BCI2000_LICENSE$
+//
+// Editor: Markus Strobel - mksstrobel@googlemail.com
 ////////////////////////////////////////////////////////////////////////////////
 #ifndef P3_SPELLER_TASK_H
 #define P3_SPELLER_TASK_H
 
-#include "StimulusTask.h"	// REQUIRED!!
-#include "Speller.h"		// REQUIRED!!
-#include "StatusBar.h"					// NOT REQUIRED
-#include "TextWindow.h"					// NOT REQUIRED
+#include "StimulusTask.h"	
+#include "Speller.h"		
+#include "StatusBar.h"					
+#include "TextWindow.h"					
 #include "SockStream.h"
-
-#include "BitmapImage.h"	// MAYBE REQUIRED OR MAYBE NOT
-#include "BackgroundObject.h" // REQUIRED!! 
+#include "BitmapImage.h"	
+#include "BackgroundObject.h" 
 
 #include <stack>
 #include <vector>
