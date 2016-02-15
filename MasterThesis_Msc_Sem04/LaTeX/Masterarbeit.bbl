@@ -1,0 +1,187 @@
+\newcommand{\etalchar}[1]{$^{#1}$}
+\begin{thebibliography}{GNV{\etalchar{+}}08}
+
+\bibitem[AGS]{AGS2014}
+An open source point\&click-engine.
+\newblock http://www.adventuregamestudio.co.uk/ - state: 2014/09/01.
+
+\bibitem[Alp]{AlpacaOnline}
+Alpaca - open source point-and-click adventure engine for flash.
+\newblock http://www.alpacaengine.com/ - state: 2014/09/04.
+
+\bibitem[BAB{\etalchar{+}}13]{BCIPlatforms}
+Clemens Brunner, G~Andreoni, L~Bianchi, Benjamin Blankertz, C.~Breitwieser,
+  S.~Kanoh, C.~A. Kothe, A.~Lecuyer, S~Makeig, J.~Mellinger, P.~Perego,
+  Y.~Renard, Gerwin Schalk, I.P. Susila, B~Venthur, G.R. Mueller-Putz, B.Z.
+  Allison, S.~Dunne, R.~Leeb, J.~Del R.~Mill{\'a}n, and A.~Nijholt.
+\newblock {\em BCI Software Platforms}.
+\newblock Biological and Medical Physics, 2013.
+
+\bibitem[BCIa]{BCI++Online}
+Bci++ the framework.
+\newblock http://www.sensibilab.lecco.polimi.it/ - state: 2014/09/04.
+
+\bibitem[BCIb]{BCI2000Online}
+Bci2000.
+\newblock http://www.schalklab.org/research/bci2000 - state: 2014/09/04.
+
+\bibitem[Ber08]{berger2008braincomputer}
+Theodore~W. Berger.
+\newblock {\em Brain-Computer Interfaces : an international assessment of
+  research and development trends}.
+\newblock Springer, Berlin [u.a.], 2008.
+
+\bibitem[Dar13]{darby2013creating}
+Jason Darby.
+\newblock {\em Creating adventure games for teens}.
+\newblock Course Technology, Boston, MA, 2013.
+
+\bibitem[Emo14]{Emotiv2014}
+{\em EMOTIV EPOC Brain Computer Interface \& Scientific Contextual EEG}, 2014.
+\newblock http://www.emotiv.com/ - state: 2014/08/17.
+
+\bibitem[GAP10]{Graimann2010}
+Bernhard Graimann, Brendan Allison, and Gert Pfurtscheller.
+\newblock Brain–computer interfaces: A gentle introduction.
+\newblock In Bernhard Graimann, Gert Pfurtscheller, and Brendan Allison,
+  editors, {\em Brain-Computer Interfaces}, The Frontiers Collection, pages
+  1--27. Springer Berlin Heidelberg, 2010.
+
+\bibitem[GNL{\etalchar{+}}08]{wheelchairBCI2}
+F.~Galán, M.~Nuttin, E.~Lew, P.W. Ferrez, G.~Vanacker, J.~Philips, and
+  J.~del~R. Millán.
+\newblock A brain-actuated wheelchair: Asynchronous and non-invasive
+  brain–computer interfaces for continuous control of robots.
+\newblock In {\em Clinical Neurophysiology}, pages 2159--2169, 2008.
+
+\bibitem[GNV{\etalchar{+}}08]{wheelchairBCI3}
+Ferran Gal{\'{a}}n, Marnix Nuttin, Dirk Vanhooydonck, Eileen Lew, Pierre~W.
+  Ferrez, Johan Philips, and Jos{\'{e}} del~R. Mill{\'{a}}n.
+\newblock Continuous brain-actuated control of an intelligent wheelchair by
+  human eeg.
+\newblock Idiap-RR Idiap-RR-53-2008, IDIAP, 0 2008.
+\newblock To appear in 4th International Brain-Computer Interface Workshop and
+  Training Course.
+
+\bibitem[GSK13]{P300Moving}
+Ilya~P. Ganin, Sergei~L. Shishkin, and Alexander~Y. Kaplan.
+\newblock A p300-based brain-computer interface with stimuli on moving objects:
+  Four-session single-trial and triple-trial tests with a game-like task
+  design.
+\newblock {\em PLoS ONE}, 8(10):e77755, 10 2013.
+
+\bibitem[HS88]{hart1988development}
+Sandra~G Hart and Lowell~E Staveland.
+\newblock Development of nasa-tlx (task load index): Results of empirical and
+  theoretical research.
+\newblock {\em Human mental workload}, 1(3):139--183, 1988.
+
+\bibitem[IAM09]{WheelchairBCI1}
+I~Iturrate, J.~Antelis, and J.~Minguez.
+\newblock Synchronous eeg brain-actuated wheelchair with automated navigation.
+\newblock In {\em Robotics and Automation, 2009. ICRA '09. IEEE International
+  Conference on}, pages 2318--2325, May 2009.
+
+\bibitem[Irr]{IrrlichtOnline}
+Bci++ graphical user interface module based on the irrlicht 3d engine.
+\newblock http://irrlicht.sourceforge.net/features/ - state: 2014/09/04.
+
+\bibitem[Jas58]{Jasp58}
+Herbert~H. Jasper.
+\newblock The ten-twenty electrode system of the international federation.
+\newblock {\em Report of the committee on methods of clinical examination in
+  electroencephalography, p.370-375}, 1958.
+
+\bibitem[KGS{\etalchar{+}}09]{BCIPinball}
+Matthias Krauledat, Konrad Grzeska, Max Sagebaum, Benjamin Blankertz, Carmen
+  Vidaurre, Klaus-Robert M\"{u}ller, and Michael Schr\"{o}der.
+\newblock Playing pinball with non-invasive bci.
+\newblock In D.~Koller, D.~Schuurmans, Y.~Bengio, and L.~Bottou, editors, {\em
+  Advances in Neural Information Processing Systems 21}, pages 1641--1648.
+  Curran Associates, Inc., 2009.
+
+\bibitem[KSC{\etalchar{+}}06]{P300SpellerCompare}
+Dean~J Krusienski, Eric~W Sellers, François Cabestaing, Sabri Bayoudh,
+  Dennis~J McFarland, Theresa~M Vaughan, and Jonathan~R Wolpaw.
+\newblock {\em A comparison of classification techniques for the P300 Speller},
+  volume~3.
+\newblock 2006.
+
+\bibitem[LF88]{FarwellDonchin1988}
+E.~Donchin L.A.~Farwell.
+\newblock {\em Talking off the top of your head: toward a mental prosthesis
+  utilizing event-related brain potentials}.
+\newblock Elsevier, December 1988.
+
+\bibitem[MIP]{BCIChess}
+Nirupan Maruthappan, Navneet Iyengar, and Piyush~Sudip Patel.
+\newblock Brain chess – playing chess using brain computer interface.
+\newblock In {\em International Conference on Advancements in Information
+  Technology, With workshop of ICBMG 2011}.
+
+\bibitem[OKPG]{P300Tactile}
+R.~Ortner, C.~Kapeller, R.~Prückl, and C.~Guger.
+\newblock A tactile p300-based bci.
+\newblock In {\em Proceedings of the Fifth International Brain - Computer
+  Interface Meeting 2013}.
+
+\bibitem[OP01]{Oostenvald2001}
+Robert Oostenveld and Peter Praamstra.
+\newblock The five percent electrode system for high-resolution eeg and erp
+  measurements.
+\newblock 2001.
+\newblock http://www.biosemi.com/publications/pdf/Oostenveld2001b.pdf - state:
+  2015/01/06.
+
+\bibitem[Ope]{OpenVibeOnline}
+Software for brain computer interfaces and real time neurosciences.
+\newblock http://openvibe.inria.fr/ - state: 2014/09/04.
+
+\bibitem[Pae06]{paehge2006verschiedenen}
+Thorsten Paehge.
+\newblock {\em Die verschiedenen P300-Komponenten und deren Topographie}.
+\newblock PhD thesis, 2006.
+\newblock Lübeck, Univ., Diss., 2007.
+
+\bibitem[Rev]{Revision4230}
+Bci2000 version 3.0.5 july 2012, revision 4230.
+\newblock http://www.bci2000.org/wiki/ - BCI2000 Binaries - state: 2014/09/04.
+
+\bibitem[Sei02]{seifert02}
+Katharina Seifert.
+\newblock {\em {Evaluation multimodaler Computer-Systeme in fr\"{u}hen
+  Entwicklungsphasen}}.
+\newblock PhD thesis, Technische Universit\"{a}t Berlin, Stra{\ss}e des 17.
+  Juni 135, 10623 Berlin, September 2002.
+
+\bibitem[SM10]{schalk2010practical}
+Gerwin Schalk and Jürgen Mellinger.
+\newblock {\em A practical guide to brain-computer interfacing with BCI2000 :
+  general purpose software for brain-computer interface research, data
+  acquisition, stimulus presentation, and brain monitoring}.
+\newblock Springer, London [u.a.], 2010.
+
+\bibitem[Smy14]{JM2014}
+Justine Smyzek.
+\newblock Drawings of a beach backdrop inspired by "`the secret of monkey
+  island"'.
+\newblock Created for the master thesis of Markus Strobel, December 2014.
+
+\bibitem[TOB]{TOBIOnline}
+Tobi : Tools for brain-computer interaction.
+\newblock http://www.tobi-project.org/ - state: 2014/09/04.
+
+\bibitem[Toe07]{toersche2007designing}
+H.A. Toersche.
+\newblock Designing a brain-computer interface to chess.
+\newblock {\em 7th Twente Student Conference on IT}, 7(June 25), 2007.
+
+\bibitem[TSO]{TSOMI90}
+The secret of monkey island, 1990, image of game scene.
+
+\bibitem[Wol12]{wolpaw2012braincomputer}
+Jonathan~R. Wolpaw, editor.
+\newblock {\em Brain-computer interfaces : principles and practice}.
+\newblock Oxford Univ. Press, New York, 2012.
+
+\end{thebibliography}

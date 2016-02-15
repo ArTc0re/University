@@ -1,0 +1,62 @@
+\chapter{Fazit und Ausblick}
+Zum Ende werden Folgerungen und Rückschlüsse aus dem Verlauf und den Ergebnissen dieser Arbeit gezogen.
+Etwaige Besonderheiten oder Probleme die während der Bearbeitung auftraten werden ebenso in die Bewertung miteinfließen.
+Im Anschluss wird zudem ein Ausblick über mögliche Entwicklungs- und Verbesserungsmöglichkeiten gegeben.\\
+
+
+\section{Fazit}
+
+Ziel der vorliegenden Arbeit war es eine \acs{BCI}-Erweiterung für eine Point\&Click \mbox{Engine} zu erstellen.
+Zu diesem Zweck wurden geeignete Softwarekomponenten ausgewählt und darauf basierend eine Erweiterung konzipiert,
+die dem Eingabeparadigma der Point\&Click Engine gerecht wurde.
+Während des Konzepts wurden daher mögliche Anwendungsszenarien vorgestellt, bewertet und entsprechend ausgewählt,
+so dass die \acs{BCI}-Erweiterung die Anforderungen dieser Masterarbeit erfüllt.
+Im Zuge dessen ergab sich auf Grund zeitkritischer Komponenten des P300-Spellers, dass die Korrektheit der Erweiterung erst nach abschließender Tests verifiziert werden konnte.\\
+
+Die Ermittlung der Testparameter stellte sich indes als deutlich zeitaufwändiger heraus als erwartet.
+Dies war in erster Linie der Tatsache geschuldet, dass Selbst-Tests weder mit der \acs{BCI}-Erweiterung, noch mit dem P300-Speller des BCI2000-Frameworks funktionierten,
+so dass zur Ermittlung der Testparameter auf Testpersonen zurückgegriffen werden musste.
+Zudem zeigte sich, dass das verwendete Emotiv EPOC sich als nicht optimal in Bezug auf das P300 Paradigma erwies, da es nicht über die Elektrodenpositionen mit größter Ausprägung des \acs{P300 ERP} verfügt 
+und für die Genauigkeit ein allgemeines Problem darstellte.
+Dies hatte zur folge, dass die Anzahl der Stimuli-Sequenzen erhöht werden musste, um überhaupt brauchbare Ergebnisse zu erzielen.
+Insgesamt benötigte daher jeder Test mehr als eine Stunde und erschwerte die Suche nach freiwilligen Testpersonen.
+Letztendlich konnten jedoch genug Testergebnisse gesammelt 
+und wie in den Testergebnissen gezeigt wurde, konnte die erwartete Funktion verifiziert werden, da die beobachteten Ergebnisse nicht zufälligen Ursprungs waren.
+In Bezug auf die Genauigkeit, ist es allerdings sinnvoll weitere Tests mit einem präziseren \acs{BCI} durchzuführen.
+Zudem brachten die Tests die Erkenntnis, dass die Größe und Komplexität der Speller-Matrix eine große Rolle bei der Genauigkeit spielt.
+Dies kann genutzt werden, um eine optimale Größe der Matrixelemente zu bestimmen.
+Darüberhinaus sind individuelle Eigenschaften wie Konzentrationsfähigkeit, Müdigkeit und Disziplin wichtige Faktoren, die die Genauigkeit ebenso maßgeblich beeinflussen können.
+Insgesamt waren jedenfalls fast alle Nutzer in der Lage, trotz der geringen Präzision, die Erweiterung zu steuern.\\
+Abschließend lässt sich hieraus der Schluss ziehen, dass die Aufgabenstellung dieser Masterarbeit erfolgreich bearbeitet wurde.\\
+
+
+
+
+
+
+
+
+
+\pagebreak
+\section{Ausblick}
+
+Die Erweiterung ermöglicht eine Vielzahl an zukünftigen Entwicklungen. 
+Zum einen können Point\&Click Spiele für Patienten entwickelt werden, die diese tatsächlich spielen und somit von dieser Masterarbeit profitieren. 
+Die Entwicklung eines Point\&Click Spiels unter Verwendung der \acs{BCI}-Erweiterung stellt dabei keine Herausforderung dar und könnte von unerfahrenen Personen durchgeführt werden.
+Zum anderen können ebenso weitere Test-Spiele erstellt werden, so dass beispielsweise optimale Parameter für \textit{StimulusDuration} und \textit{InterStimulusDuration} ermittelt werden.\\
+
+Weiterhin ist es möglich das Konzept dieser Arbeit auf andere Spiele Engine's zu übertragen, 
+dies würde lediglich eine Modifikation der Engine erfordern und könnte auf die gleiche Weise mit dem modifzierten P300 Speller kommunizieren.
+Natürlich ist es ebenso möglich das Konzept weiter zu entwickeln, sodass die Logik sich ausschließlich innerhalb der Erweiterung auf Engine-Ebene befindet.\\
+
+Prinzipiell ist es sogar möglich, mit Hilfe ähnlicher Bild- und Matrix-Parameter, 
+viele verschiedene Anwendungen so zu erweitern, 
+dass diese ebenfalls über den modifizierten P300-Speller dieser Arbeit gesteuert werden können.
+Insofern ist zu hoffen, dass in Zukunft noch weitere Anwendungen für \acs{BCI}s entwickelt oder erweitert werden und motorisch eingeschränkte Menschen von diesen Entwicklungen profitieren können.\\
+
+
+
+
+
+
+

@@ -1,0 +1,347 @@
+% Autoren: Ursprüngliche Version von Eike Thaden, modifiziert von René Schumann und Andreas Lattner, modifiziert von Markus Strobel
+
+\documentclass[
+	a4paper,
+	hidelinks,
+	12pt,
+	headsepline,
+	numbers=noenddot,
+	bibliography=totoc,
+	index=totoc,
+	fleqn,
+	DIVcalc,
+	headings=normal
+	]{scrreprt}
+% Standard-Dokument mit
+%   Papierformat A4
+%   Binderand 5 mmx
+%   Schrift 12-Punkt
+%   Linie unter der Kopfzeile
+%   Nummern ohne Punkt am Ende
+%   Literaturverzeichnis mit Nummer im Inhaltsverzeichnis
+%   Index mit Nummer im Inhaltsverzeichnis
+%   Formeln werden linksbündig statt zentriert angeordnet
+%   Berechne automatisch gute Werte für DIV
+%		Etwas kleinere Überschriften
+
+% Fonts etc:
+%   8-Bit-Fonts
+\usepackage[T1]{fontenc}
+
+% Schriftart
+\usepackage{helvet}
+%\usepackage{arial}
+
+%damit die pdf kommentiert werden kann
+\usepackage{pdfcomment}
+
+% Tables
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{booktabs}
+
+\newcommand*{\tabbox}[2][t]{% 
+   \vspace{-5pt}\parbox[#1][2.5\baselineskip]{0cm}{#2}}
+
+
+%Binderand- und Seitenrandeinstellungen
+\typearea[20mm]{15}
+
+%   zusätzliche Symbole
+\usepackage{textcomp,latexsym}
+
+%   Latin1-Umlaute in der Eingabe
+%\usepackage[latin1]{inputenc}
+\usepackage[utf8]{inputenc}
+
+% neu deutsche Rechtschreibung
+\usepackage[ngerman]{babel}
+
+% für die aktuelle Zeit
+\usepackage{scrtime}
+
+%für Definitionen, Theoreme u.Ä.
+\usepackage{theorem}
+%\theoremstyle{break}
+\newtheorem{Def}{Definition}
+
+
+% Web-Adressen auch mit T1-Encoding
+%\usepackage[T1]{url}
+
+% und in tt-Font
+%\urlstyle{tt}
+
+% zuverlässige Bildpositionierung
+\usepackage{float}
+% Beispiel
+%\begin{figure}[H]
+%  \centering
+%\fbox{
+%    \includegraphics[scale=0.35]{images/bildname}
+%}
+%  \caption{blabla}
+%  \label{bla}
+%\end{figure}
+
+% Grafik
+\usepackage[pdftex]{graphicx}
+
+% Zur Einbindung von PDFs		
+\usepackage{pdfpages}
+
+
+ % Tikz Package for Drawing 
+\usepackage{tikz}
+% Tikz Node Positioning
+\usetikzlibrary{positioning}
+\usetikzlibrary{datavisualization} % LATEX and plain TEX
+\usetikzlibrary[datavisualization] % ConTEXt
+\usetikzlibrary{datavisualization.formats.functions}
+
+
+% Mathematik: wer's braucht, sollte folgende Zeilen verwenden:
+\usepackage{amsfonts}	
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+%Für das Setzen von Algorithmen
+% Algorithm/Algorithmic-Umgebung für Algorithmen
+%\usepackage{include/algorithm}
+%\usepackage{include/algorithmic}
+
+%\usepackage{listings}
+%\lstset{
+%	numbers=left,
+%	numberstyle=\tiny,
+%	numbersep=5pt,
+%	basicstyle=\scriptsize,
+%	breaklines = true
+%}
+
+
+% for quotation of source code
+\usepackage{listings}
+\usepackage{color}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\definecolor{red}{rgb}{1.0,0,0}
+
+\definecolor{semicolor}{rgb}{0.84,.95,0.73}
+\definecolor{hitcolor}{rgb}{0.57,.81,0.31}
+
+\lstset{
+  frame=single,
+  frameround=ffff,
+%  frameround=tttt,
+  language=C++,
+%  language=Java,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=4,
+  captionpos=b
+}
+
+
+
+
+
+%% Hyperref erzeugt Hyperlinks in PDF-Dokumenten und erlaubt das
+%% Setzen bestimmter Attribute
+%\usepackage[
+%% Titel der Arbeit
+%pdftitle={InsertTitleHere},
+
+%% Autor der Arbeit
+%pdfauthor={Markus Strobel},
+
+%% Art der Arbeit
+%pdfsubject=[Masterarbeit]{hyperref}
+
+% Wer's braucht: Verwende einen Index	
+% Verwendung im Text: \index{Stichwort}
+%\usepackage{makeidx}
+
+% fette Seitenzahlen im index für die Hauptreferenz ermöglichen
+% Verwendung: \index{Stichwort|ibf}
+\newcommand{\ibf}[1]{{\bfseries #1}}
+
+% Wer's hübscher findet: Numerierung von Formeln nicht mit
+% Kapitelnummer.Formelnummer, sondern nur mit Formelnummer
+%\renewcommand{\theequation}{\arabic{equation}}
+
+% eine Randnote für fehlende Teile
+\newcommand{\fehlt}[1]{(\marginpar[\hfill!$\longrightarrow$]{$\longleftarrow$!}Hier fehlt \emph{#1})}
+
+% Keinen Einzug bei neuen Absätzen
+ \setlength{\parindent}{0ex}
+
+% Abstand zweier Listenelemente kleiner
+\setlength{\itemsep}{0ex plus0.2ex}
+
+% Benutze bei der Numerierung von Gleichungen "Kapitelnummer.Gleichungsnummer"
+\renewcommand{\theequation}{\thechapter.\arabic{equation}}
+
+% Abkuerzungsverzeichnis
+\usepackage[printonlyused]{acronym}
+
+% konfigurierbarer Zeilenabstand
+\usepackage{setspace}
+
+
+
+
+
+\pagenumbering{roman} 
+% AB HIER GEHT ES LOS
+
+
+% Angaben für das Titelblatt
+\titlehead{
+  \begin{center}
+  \includegraphics[scale=0.075]{images/Goethe-Logo_sw.png}\\ \vspace{0.1cm}
+
+  {\scshape Fachbereich 12 -- Informatik und Mathematik}\\
+  {\scshape Institut für Informatik}
+	%\vspace{0.5cm}
+  \end{center}				
+}
+
+\singlespacing
+% Art der Arbeit	
+\subject{Masterarbeit}
+% Tite
+\title{\normalsize{Monkey Brains Island - \\Eine BCI-Erweiterung für eine Point and Click Engine}}
+\begin{titlepage}
+% Autor
+\author {
+%\normalsize{			\textbf{Author}									} \\
+\normalsize{			\textbf{Markus Strobel}									} \\
+\normalsize{			Matrikelnummer: 3545258								}\\
+\normalsize{			Frankfurt am Main, den \today 					}\\\\
+\footnotesize{ 		\textbf{Betreuer}									} \\
+\footnotesize{ 		Prof. Dr.-Ing. Detlef Krömker							} \\
+\footnotesize{		Dipl. Inf. Matthias Pfeiffer								} \\\\
+%\footnotesize{		\textbf{Erst- und Zweitgutachter}							}\\
+%\footnotesize{		Prof. Dr-Ing. Detlef Krömker 							}\\
+%\footnotesize{		Dr. Karsten Tolle									}
+}
+
+
+% Datum	
+\date{
+%\normalsize{		Frankfurt am Main, eingereicht am \today 				} 
+%\normalsize{		Frankfurt am Main, den \today 				} 
+%\vspace{0.2cm}
+}
+
+
+\end{titlepage}
+
+% Rückseite des Titelblatts: Wann gesetzt?
+% \lowertitleback{\small Gesetzt am \today{} um \thistime{} Uhr mit {\LaTeX}.}
+
+
+% Erstelle den Index (nur benutzen, falls ein Index verwendet wird!)
+\onehalfspacing
+\makeindex
+% Und hier geht es los
+\begin{document}
+
+	
+
+    % Titelblatt
+    \maketitle	
+
+
+
+
+    % Eidesstattliche Erklärung
+    \include{content/Erklaerung}
+
+    % Zusammenfassung / Abstract
+     \include{content/Zusammenfassung}
+
+     \pagenumbering{arabic}
+
+    % Inhaltsverzeichnis
+    \setcounter{secnumdepth}{1}
+    \tableofcontents
+
+    \singlespacing
+  % Abkuerzungsverzeichnis
+    \include{content/Akronyme}
+    \onehalfspacing
+
+    % der eigentliche Text
+    % Kapitelübersicht
+    % 1) Einleitung - Problembeschreibung, Vorstellung der Arbeit, Übersicht über die Arbeit (wo steht was?)
+	\include{content/Einleitung}
+	
+    % 2) Grundlagen - Was ist allgemein Wichtig?
+	%\include{zeitplan} %kommt später wieder raus
+	\include{content/Grundlagen}
+	
+    % 3) State of the Art - Was ist der aktuelle Stand der Technik. Wie wird aktuell das Problem gelöst?
+	\include{content/StateOfTheArt}
+	
+    % 4) Konzeption - Genaue Problembeschreibung (Anforderungsanalyse). Lösungsansatz.
+	\include{content/Konzept}
+	
+    % 5) Implementierung/Umsetzung - Wie wurde das Problem gelöst? Welche Probleme gab es? Details...
+	\include{content/Umsetzung}
+
+    % 5b ) Tests
+	\include{content/Tests}
+	
+    % 6) Ergebnisse - Zusammenfassung der Ergebnisse und deren Bewertung
+	\include{content/Ergebnisse}
+	
+    % 7) Bewertung und Ausblick - Fazit der eigenen Arbeit. Kritische Betrachtung der eigenen Arbeit. Verbesserungsmöglichkeiten, etc
+	\include{content/Fazit}
+	
+    % 8) Abbildungs- und Literaturverzeichnis
+	
+	% Literaturverzeichnis
+	\bibliographystyle{alpha}
+	\bibliography{library}
+
+
+	% Abbildungsverzeichnis
+	\addcontentsline{toc}{chapter}{Abbildungsverzeichnis}
+	\listoffigures
+
+
+	% Listingsverzeichnis
+	%\addcontentsline{toc}{chapter}{Listingsverzeichnis}
+	%\lstlistoflistings
+
+	
+	% Tabellenverzeichnis
+	\addcontentsline{toc}{chapter}{Tabellenverzeichnis}
+	\listoftables
+
+    % 9) Anhang
+	\addcontentsline{toc}{chapter}{Anhang}
+	\include{content/Anhang}		
+
+
+    % Schreibe den erstellten Index
+%    \printindex
+
+\end{document}
+

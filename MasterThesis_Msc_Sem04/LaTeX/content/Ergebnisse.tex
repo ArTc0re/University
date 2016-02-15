@@ -1,0 +1,561 @@
+\chapter{Ergebnisse}
+
+In diesem Kapitel werden die Ergebnisse der Tests vorgestellt und in geeigneter Weise interpretiert.\\
+Der gesamte Testablauf dauerte für jede Person etwa eine Stunde. 
+
+Von insgesamt zehn Probanden waren nur sechs in der Lage den Test komplett durchzuführen und verwertbare Ergebnisse zu liefern.
+Von den vier ausgeschlossenen Testpersonen erreichten zwei nur eine unzureichende Signalstärke.
+Die dritte Person durfte am Test auf Grund von Epilepsie nicht teilnehmen.
+Bei der vierten Testperson musste der Test auf Grund von Konzentrationsschwierigkeiten abgebrochen werden.\\
+
+
+% Definition von Hit, Semi und Miss für den nachfolgenden Kontext
+
+In Bezug auf die Tests und die Ergebnisse ist anzumerken, dass jede Ermittlung eines Zielfelds genau genommen aus der Kombination zweier Eingabe-Ermittlungen hervor geht.
+Eine Auswahl setzt sich daher aus der ermittelten Zeile und der ermittelten Spalte zusammen.
+Demzufolge müssen für die Interpretation der Ergebnisse zunächst drei Begriffe definiert werden, die ein ermitteltes Ergebnis beschreiben.
+
+ \begin{Def} - \textbf{Hit} \\
+ Wir sprechen von einem Hit, wenn eine richtig ermittelte Zeile mit einer richtig ermittelten Spalte kombiniert und somit das korrekte Zielfeld wiedergegeben wird.
+ \end{Def}
+ \begin{Def} - \textbf{Semi} \\
+ Ein Semi tritt immer dann auf, wenn lediglich eine Zeile bzw. Spalte richtig und die andere falsch ermittelt wurde.
+ \end{Def} 
+ \begin{Def} - \textbf{Miss} \\
+Ein Miss entspricht der Kombination aus je einer falsch ermittelten Zeile und Spalte.\\
+ \end{Def}
+
+ 
+Die Wahrscheinlichkeiten einer zufälligen Auswahl der Ergebnisse ist für die Referenz-Tests in Tabelle \ref{tab:randomReference} und für das Test-Spiel in Tabelle \ref{tab:randomGame} zu sehen.
+In Bezug auf das Test-Spiel gibt es zwei Speller-Matrizen der Größen 5x9 und 5x10.
+Zur Vereinfachung wird nur die Wahrscheinlichkeitsverteilung der 5x9-Speller-Matrix zum Vergleich herangezogen, 
+da diese die meisten Eingabe-Ermittlungen vorzuweisen hat, darüberhinaus unterscheidet sich die Wahrscheinlichkeitsverteilung der 5x10-Speller-Matrix (dargestellt in Klammern) nur geringfügig von der 5x9-Speller-Matrix.
+
+
+\begin{table}[h!]
+\centering
+\footnotesize{
+\setlength{\extrarowheight}{5pt}
+\begin{tabular}{|ccc|}
+\multicolumn{3}{c}{6x6-Speller-Matrix} \\ \hline
+\textbf{Hit} & \textbf{Semi} & \textbf{Miss} \\ \hline
+2.77\% & 27.77\% & 69.44\% \\ \hline
+\end{tabular}}
+\caption{Die Wahrscheinlichkeitsverteilung der Referenz-Tests}
+\label{tab:randomReference}
+\end{table}
+
+
+
+\begin{table}[h!]
+\centering
+\footnotesize{
+\setlength{\extrarowheight}{5pt}
+\begin{tabular}{|ccc|}
+\multicolumn{3}{c}{5x9(5x10)-Speller-Matrix} \\ \hline
+\textbf{Hit} & \textbf{Semi} & \textbf{Miss} \\ \hline
+2.22\% (2.0\%)& 26.66\% (26.0\%)& 71.11\% (72.0\%) \\ \hline
+\end{tabular}}
+\caption{Die Wahrscheinlichkeitsverteilung des Test-Spiels}
+\label{tab:randomGame}
+\end{table}
+
+
+
+In Tabelle \ref{tab:Ergebnisse} sind die Testergebnisse der einzelnen Testabschnitte jedes Probanden zu sehen.
+
+
+
+\begin{table}[h!]
+\centering
+\footnotesize{
+\setlength{\extrarowheight}{5pt}
+\begin{tabular}{cc|ccc|ccc|ccc|}
+
+
+\multicolumn{2}{c}{}			& \multicolumn{3}{c}{Referenz-Test 1} &	\multicolumn{3}{c}{Test-Spiel} & \multicolumn{3}{c}{Referenz-Test 2} 			\\
+\multicolumn{1}{l}{TestNr.}	& \multicolumn{1}{c}{} 			& \multicolumn{1}{c}{\textbf{Hit}}	& \textbf{Semi}	& \multicolumn{1}{c}{\textbf{Miss}}	& \multicolumn{1}{c}{\textbf{Hit}}	& \textbf{Semi}	&\multicolumn{1}{c}{\textbf{Miss}} & \multicolumn{1}{c}{\textbf{Hit}}	& \textbf{Semi}	& \multicolumn{1}{c}{\textbf{Miss}}		\\ \cline{3-11}
+\multirow{2}{*}{\textbf{01}}	&	\textbf{\#}	& 6		& 4		& 1		& 6		& 12	& 7		& 7		& 2		& 2		\\
+								&	\%			& 54.5\%& 36.4\%& 9.1\%	& 24.0\%& 48.0\%& 28.0\%& 63.6\%& 18.2\%& 18.2\%\\ \cline{3-11}
+
+\multirow{2}{*}{\textbf{02}}	&	\textbf{\#}	& 5		& 5		& 1		& 8		& 12	& 5		& 6		& 4		& 1		\\
+								&	\%			& 45.5\%& 45.5\%& 9.1\%	& 32.0\%& 48.0\%& 20.3\%& 54.5\%& 36.4\%	& 9.1\%		\\ \cline{3-11}
+
+\multirow{2}{*}{\textbf{03}}	&	\textbf{\#}	& 8		& 3		& 0		& 4		& 16	& 5		& 7		& 3		& 1		\\
+								&	\%			& 72.7\%& 27.3\%& 0.3\%& 16.0\%& 64.0\%& 20.3\%& 63.6\%& 27.3\%& 9.1\% \\ \cline{3-11}
+
+\multirow{2}{*}{\textbf{06}}	&	\textbf{\#}	& 8& 2& 1& 5& 10& 10& 2& 7& 2\\
+								&	\%			& 72.7\%& 18.2\%& 9.1\%& 20.3\%& 40.3\%& 40.3\%& 18.2\%& 63.6\%& 18.2\%\\ \cline{3-11}
+
+\multirow{2}{*}{\textbf{08}}	&	\textbf{\#}	& 4& 6& 1& 3& 15& 7& 4& 4& 3\\
+								&	\%			& 36.4\%& 54.5\%& 9.1\%& 12.0\%& 60.3\%& 28.0\%& 36.4\%& 36.4\%& 27.3\%\\ \cline{3-11}
+
+\multirow{2}{*}{\textbf{10}}	&	\textbf{\#}	& 6& 3& 2& 1& 11& 13& 7& 3& 1\\
+								&	\%			& 54.5\%& 27.3\%& 18.2\%& 4.0\%& 44.0\%& 52.0\%& 63.6\%& 27.3\%& 9.1\%\\ \cline{3-11}	
+
+								
+								
+
+%									\\ \cline{3-11}													
+% TOTAL
+%\multirow{2}{*}{\textbf{Total}}	&	\textbf{\#}	& 37& 23& 6& 27& 76& 47& 33& 23& 10 \\ 
+%								&	\textbf{\%} & 56.1\%& 34.8\%& 9.1\%& 18.0\%& 50.7\%& 31.3\%& 50.0\%& 34.8\%& 15.2\% \\ \cline{3-11}
+							
+
+\end{tabular}
+}
+\caption{Die Ergebnisse der Tests}
+\label{tab:Ergebnisse}
+
+\end{table}
+
+
+\pagebreak
+
+In Tabelle \ref{tab:Ergebnisse} ist deutlich zu sehen, dass es sich bei den Eingabe-Ermittlungen der Referenz-Tests und des Test-Spiels nicht um zufällige Ergebnisse handelt,
+da diese sich doch erheblich von den Wahrscheinlichkeitsverteilungen in den Tabellen \ref{tab:randomReference} und \ref{tab:randomGame} unterscheiden.
+
+Eine Besonderheit stellen jedoch die vergleichsweise schlechten Ergebnisse von Testperson 10 dar, 
+da diese als einzige Erfahrung im Umgang mit \acs{BCI}'s vorweisen konnte und bereits in früheren Stadien der \acs{BCI}-Erweiterung als Testperson fungierte.
+Die damaligen Tests wurden jedoch mit einer \textit{StimulusDuration} und \textit{InterStimulusDuration} von jeweils 62.5ms, 
+statt der im Test verwendeten 125ms und 125-250ms, durchgeführt und erzielten deutlich bessere Ergebnisse.
+Allerdings sind diese Daten unzureichend, um weitere Schlüsse daraus zu ziehen, 
+jedoch kann es sinnvoll sein für einzelne \acs{BCI}-Benutzer individuelle \textit{StimulusDuration}- und \mbox{\textit{InterStimulusDuration}}-Werte zu ermitteln, 
+um die Genauigkeit weiter zu steigern.\\
+
+
+
+
+\begin{table}[h!]
+\centering
+\footnotesize{
+\begin{tabular}{|p{0.3cm} p{0.5cm}|		>{\columncolor[rgb]{0.84,.95,0.73}}p{0.3cm} >{\columncolor[rgb]{0.84,.95,0.73}}p{0.5cm}| 		p{0.3cm} p{0.5cm}| 		p{0.3cm} p{0.5cm}| 		p{0.3cm} p{0.5cm}| p{0.3cm} p{0.5cm}| p{0.3cm} p{0.5cm}| p{0.3cm} p{0.5cm}| p{0.3cm} p{0.5cm}|}
+\hline
+\tabbox{1} & \tabbox[b]{\LARGE{1}} &
+\tabbox{2} & \tabbox[b]{\LARGE{5}} &
+\tabbox{3} & \tabbox[b]{\LARGE{}} &
+\tabbox{4} & \tabbox[b]{\LARGE{5}} &
+\tabbox{5} & \tabbox[b]{\LARGE{}} &
+\tabbox{6} & \tabbox[b]{\LARGE{}} &
+\tabbox{7} & \tabbox[b]{\LARGE{2}} &
+\tabbox{8} & \tabbox[b]{\LARGE{2}} &
+\tabbox{9} & \tabbox[b]{\LARGE{}} \\ \hline
+
+\tabbox{10} & \tabbox[b]{\LARGE{2}} &
+\tabbox{11} & \tabbox[b]{\LARGE{6}} &
+\tabbox{12} & \tabbox[b]{\LARGE{2}} &
+\tabbox{13} & \tabbox[b]{\LARGE{1}} &
+\tabbox{14} & \tabbox[b]{\LARGE{1}} &
+\tabbox{15} & \tabbox[b]{\LARGE{4}} &
+\tabbox{16} & \tabbox[b]{\LARGE{3}} &
+\tabbox{17} & \tabbox[b]{\LARGE{}} &
+\tabbox{18} & \tabbox[b]{\LARGE{1}} \\ \hline
+
+\rowcolor[rgb]{0.84,.95,0.73}
+\tabbox{19} & \tabbox[b]{\LARGE{5}} &
+\cellcolor[rgb]{0.57,.81,0.31} \tabbox{20} & \cellcolor[rgb]{0.57,.81,0.31} \tabbox[b]{\LARGE{18}} &
+\tabbox{21} & \tabbox[b]{\LARGE{9}} &
+\tabbox{22} & \tabbox[b]{\LARGE{8}} &
+\tabbox{23} & \tabbox[b]{\LARGE{2}} &
+\tabbox{24} & \tabbox[b]{\LARGE{3}} &
+\tabbox{25} & \tabbox[b]{\LARGE{3}} &
+\tabbox{26} & \tabbox[b]{\LARGE{3}} &
+\tabbox{27} & \tabbox[b]{\LARGE{3}} \\ \hline
+
+\tabbox{28} & \tabbox[b]{\LARGE{2}} &
+\tabbox{29} & \tabbox[b]{\LARGE{4}} &
+\tabbox{30} & \tabbox[b]{\LARGE{1}} &
+\tabbox{31} & \tabbox[b]{\LARGE{}} &
+\tabbox{32} & \tabbox[b]{\LARGE{}} &
+\tabbox{33} & \tabbox[b]{\LARGE{}} &
+\tabbox{34} & \tabbox[b]{\LARGE{2}} &
+\tabbox{35} & \tabbox[b]{\LARGE{3}} &
+\tabbox{36} & \tabbox[b]{\LARGE{1}} \\ \hline
+
+\tabbox{37} & \tabbox[b]{\LARGE{}} &
+\tabbox{38} & \tabbox[b]{\LARGE{1}} &
+\tabbox{39} & \tabbox[b]{\LARGE{1}} &
+\tabbox{40} & \tabbox[b]{\LARGE{}} &
+\tabbox{41} & \tabbox[b]{\LARGE{1}} &
+\tabbox{42} & \tabbox[b]{\LARGE{}} &
+\tabbox{43} & \tabbox[b]{\LARGE{2}} &
+\tabbox{44} & \tabbox[b]{\LARGE{}} &
+\tabbox{45} & \tabbox[b]{\LARGE{}} \\ \hline
+
+\end{tabular}}
+
+\caption{Das Trefferbild der 5x9-Speller-Matrix des Test-Spiels}
+\label{tab:Trefferbild}
+\end{table}
+
+
+
+In Tabelle \ref{tab:Trefferbild} ist das Trefferbild aller Testpersonen der 5x9-Speller-Matrix dargestellt.
+Die \colorbox{hitcolor}{\textit{Hits}} und \colorbox{semicolor}{\textit{Semis}} wurden zur besseren Veranschaulichung farblich hervorgehoben und
+lassen offenkundig erkennen, dass sich die Mehrheit der Treffer auf das Ziel\-element und die korrespondierende Zeile bzw. Spalte konzentrieren.\\
+
+
+
+Insgesamt erreichte keiner der Tests eine erstrebenswerte Genauigkeit von über 90\%. 
+Dies kann allerdings durchaus dem verwendeten \acs{BCI} geschuldet sein, da dieses nicht über die sechs leistungsfähigsten Elektrodenpositionen verfügt.
+Diese sechs Elektrodenpositionen würden zusammen eine Genauigkeit von 90\% erreichen \cite[S.220]{wolpaw2012braincomputer} und können mit weiteren Elektroden zusätzlich verbessert und beschleunigt werden.\\
+
+
+Letztendlich zeigen die Ergebnisse, dass die Aufgabe dieser Masterarbeit zur Erstellung einer \acs{BCI}-Erweiterung für eine Point\&Click Engine erfolgreich realisiert wurde und diese auch funktionsfähig ist.
+Ebenfalls ist zu sehen, dass die Ergebnisse des Test-Spiels im Vergleich zu den Referenz-Tests weniger genau sind und eine Verschiebung der Ergebnisse des Test-Spiels zu einer erhöhten Anzahl der Semis zu beobachten ist.\\
+
+Aus diesem Grund werden die Ergebnisse mit Hilfe der Fragebögen und des \acs{NASA-TLX} genauer betrachtet.
+Fragebogen 1 und 3 wurden jeweils nach den Referenz-Tests und Fragebogen 2 nach dem Test-Spiel ausgefüllt.\\
+
+\begin{figure}[h!]
+\begin{center}
+\tikz[scale=1.75] 
+\datavisualization[
+scientific axes=clean,
+y axis={label={Müdigkeit},ticks={step=1},grid}, 
+x axis={label={Fragebogen Nr.},ticks={step=1}},
+visualize as line/.list={tp01,tp02/08,tp03,tp06,tp10},
+style sheet=vary hue,
+new legend={below},
+% legend={matrix node style={fill=black!5}},
+tp01= {label in legend={text=Testperson 01, legend=below}},
+tp02/08= {label in legend={text=Testperson 02/08, legend=below}},
+tp03= {label in legend={text=Testperson 03, legend=below}},
+tp06= {label in legend={text=Testperson 06, legend=below}},
+tp10= {label in legend={text=Testperson 10, legend=below}},
+]
+
+data [set=tp01] {
+x, y
+0, 2
+1, 2
+2, 3
+3, 3
+}
+
+data [set=tp02/08] {
+x, y
+0, 3
+1, 3
+2, 3
+3, 3
+}
+
+data [set=tp03] {
+x, y
+0, 7
+1, 5
+2, 8
+3, 8
+}
+
+data [set=tp06] {
+x, y
+0, 3
+1, 3
+2, 4
+3, 5
+}
+
+data [set=tp10] {
+x, y
+0, 3
+1, 4
+2, 4
+3, 4
+};
+
+\caption{Müdigkeitsverlauf aller Testpersonen}
+\label{muedigkeit}
+\end{center}
+\end{figure}
+
+In Abbildung \ref{muedigkeit} ist der Müdigkeitsverlauf aller Testpersonen zu sehen. 
+Bis auf Testperson 02 gaben alle eine erhöhte Müdigkeit gegen Ende der Tests an.
+Insbesondere fällt auf, dass Testperson 02, die keine Ermüdung aufwies, auch die besten Ergebnisse des Test-Spiels vorweisen konnte.
+Gleiches gilt für den Verlauf des allgemeinen Wohlbefindens in Abbildung \ref{wohlbefinden}, bis auf Testperson 02 gaben alle Probanden einen verschlechterten Allgemeinzustand an.\\
+
+\pagebreak
+
+
+\begin{figure}[h!]
+\begin{center}
+\tikz[scale=1.75] 
+\datavisualization[
+scientific axes=clean,
+y axis={label={Wohlbefinden},ticks={step=1},grid}, 
+x axis={label={Fragebogen Nr.},ticks={step=1}},
+visualize as line/.list={tp01,tp02,tp03,tp06,tp08,tp10},
+style sheet=vary hue,
+new legend={below},
+% legend={matrix node style={fill=black!5}},
+tp01= {label in legend={text=Testperson 01, legend=below}},
+tp02= {label in legend={text=Testperson 02, legend=below}},
+tp03= {label in legend={text=Testperson 03, legend=below}},
+tp06= {label in legend={text=Testperson 06, legend=below}},
+tp08= {label in legend={text=Testperson 08, legend=below}},
+tp10= {label in legend={text=Testperson 10, legend=below}},
+]
+
+data [set=tp01] {
+x, y
+0, 9
+1, 8
+2, 7
+3, 8
+}
+
+data [set=tp02] {
+x, y
+0, 9
+1, 9
+2, 9
+3, 9
+}
+
+data [set=tp03] {
+x, y
+0, 6
+1, 5
+2, 5
+3, 4
+}
+
+data [set=tp06] {
+x, y
+0, 5
+1, 5
+2, 5
+3, 3
+}
+
+data [set=tp08] {
+x, y
+0, 7
+1, 7
+2, 5
+3, 5
+}
+
+data [set=tp10] {
+x, y
+0, 7
+1, 7
+2, 6
+3, 6
+};
+
+\caption{Der Verlauf des allgemeinen Wohlbefindens aller Testpersonen}
+\label{wohlbefinden}
+\end{center}
+\end{figure}
+
+Die Ergebnisse in Abbildung \ref{muedigkeit} und \ref{wohlbefinden} geben allerdings wenig Aufschluss darüber, 
+warum sich die Ergebnisse des Test-Spiels von den Ergebnissen der Referenz-Tests unterscheiden.
+Demgegenüber zeigt Abbildung \ref{konzentration}, das einige der Testpersonen es als schwerer empfanden sich auf die Matrixelemente des Test-Spiels zu konzentrieren.\\
+
+\begin{figure}[h!]
+\begin{center}
+\tikz[scale=1.75] 
+\datavisualization[
+scientific axes=clean,
+y axis={label={Konzentrationsschwierigkeit},ticks={step=1},grid}, 
+x axis={label={Fragebogen Nr.},ticks={step=1}},
+visualize as line/.list={tp01,tp02,tp03,tp06,tp08,tp10},
+style sheet=vary hue,
+new legend={below},
+% legend={matrix node style={fill=black!5}},
+tp01= {label in legend={text=Testperson 01, legend=below}},
+tp02= {label in legend={text=Testperson 02, legend=below}},
+tp03= {label in legend={text=Testperson 03, legend=below}},
+tp06= {label in legend={text=Testperson 06, legend=below}},
+tp08= {label in legend={text=Testperson 08, legend=below}},
+tp10= {label in legend={text=Testperson 10, legend=below}},
+]
+
+data [set=tp01] {
+x, y
+1, 4
+2, 5
+3, 3
+}
+
+data [set=tp02] {
+x, y
+1, 3
+2, 2
+3, 2
+}
+
+data [set=tp03] {
+x, y
+1, 4
+2, 7
+3, 6
+}
+
+data [set=tp06] {
+x, y
+1, 3
+2, 5
+3, 4
+}
+
+data [set=tp08] {
+x, y
+1, 3
+2, 5
+3, 6
+}
+
+data [set=tp10] {
+x, y
+1, 5
+2, 5
+3, 3
+};
+
+\caption{Das Schwierigkeitsempfinden der Testpersonen, sich auf die jeweiligen Matrixelemente zu fokussieren.}
+\label{konzentration}
+\end{center}
+\end{figure}
+
+Insbesondere weisen Anmerkungen einiger Testpersonen darauf hin, dass es ihnen schwerer gefallen ist, sich auf die im Vergleich zum Referenz-Test kleineren Matrixelemente zu konzentrieren.
+Weiterhin wurde angegeben, dass benachbarte Spalten oder Zeilen mehr wahrgenommen wurden, als bei den Referenz-Tests.\\
+Die kleineren Stimuli des Test-Spiels sind demnach wahrscheinlich für die Diskrepanz zwischen dem Test-Spiel und den Referenz-Tests verantwortlich.
+Allerdings handelt es sich beim Test-Spiel und bei Point\&Click-Spielen im allgemeinen nicht um sterile Hintergründe, sodass auch andere Faktoren eine Rolle bei der Diskrepanz der Ergebnisse spielen können.\\
+
+
+
+
+
+
+% NASA-TLX
+\begin{table}[h!]
+%\centering
+\footnotesize{
+\setlength{\extrarowheight}{5pt}
+\begin{tabular}{
+|c|cc|cc|cc|cc|cc|cc|
+}
+
+
+\multicolumn{1}{c}{} 
+& \multicolumn{2}{c}{Test 01} 
+& \multicolumn{2}{c}{Test 02} 
+& \multicolumn{2}{c}{Test 03} 
+& \multicolumn{2}{c}{Test 06} 
+& \multicolumn{2}{c}{Test 08} 
+& \multicolumn{2}{c}{Test 10} 
+\\
+
+
+\multicolumn{1}{r|}{\tiny{W=Wertung, G=Gewichtung}} 
+& W & G
+& W & G
+& W & G
+& W & G
+& W & G
+& W & G
+\\ \hline
+
+
+Geistige Anforderung
+& 0.5 & 5
+& 0.85 & 5
+& 0.5 & 1
+& 0.5 & 4
+& 0.85 & 4
+& 0.9 & 5
+\\
+
+Körperliche Anforderung
+& 0.65 & 1
+& 0.05 & 0
+& 0.5 & 0
+& 0.00 & 1
+& 0.65 & 3
+& 0.1 & 1
+\\
+
+Zeitliche Anforderung
+& 0.7 & 3
+& 0.55 & 3
+& 0.05 & 3
+& 0.05 & 0
+& 0.15 & 0
+& 0.5 & 0
+\\
+
+Ausführung der Aufgaben
+& 0.55 & 2
+& 0.25 & 3
+& 0.3 & 3
+& 0.5 & 2
+& 0.5 & 5
+& 0.25 & 2
+\\
+
+Anstrengung
+& 0.5 & 0
+& 0.25 & 2
+& 0.7 & 4
+& 0.5 & 3
+& 0.85 & 3
+& 0.9 & 3
+\\
+
+Frustration
+& 0.6 & 4
+& 0.25 & 2
+& 0.8 & 4
+& 0.7 & 5
+& 0.3 & 0
+& 0.9 & 4
+\\ \hline \hline
+
+Subjektive Belastung
+& \multicolumn{2}{c|}{0.583}
+& \multicolumn{2}{c|}{0.51}
+& \multicolumn{2}{c|}{0.503}
+& \multicolumn{2}{c|}{0.533}
+& \multicolumn{2}{c|}{0.693}
+& \multicolumn{2}{c|}{0.76}
+\\ \hline
+
+
+
+\end{tabular}
+}
+\caption{Die Ergebnisse des \acs{NASA-TLX}}
+\label{tab:nasatlxresults}
+
+\end{table}
+
+
+
+
+
+
+
+Abschließend werden noch die Ergebnisse des \acs{NASA-TLX} betrachtet.
+In Tabelle \ref{tab:nasatlxresults} wird die subjektive Belastung der Probanden dargestellt.
+Testperson 10 weist bei diesem Test die höchste subjektive Belastung auf und könnte eine Erklärung für ihr vergleichweise schlechtes Ergebnis beim Test-Spiel sein.
+Zusätzlich weist auch Testperson 08 eine ähnliche hohe subjektive Belastung und die zweit schlechtesten Ergebnisse auf.
+Dies führt zu der Annahme, dass die Ergebnisse stark von der subjektiven Belastung beeinflusst werden können und eine entsprechende Erklärung für individuelle schlechte Ergebnisse sein kann.\\
+
+Hinzu kommt, dass Testperson 02, 06 und 08 Brillenträger waren und es auf Grund des \acs{BCI} nicht möglich war die Brillen während der Tests zu tragen.
+Testperson 06 und 10 gaben zudem Schlafstörungen als neurologische Erkrankungen an.
+In Bezug auf diese Eigenschaften kann in den Testergebnissen keine klare Tendenz gesehen werden,
+dennoch ist es anzunehmen, dass diese Faktoren Einfluss auf individuelle Ergebnisse haben können.\\
+
+
+
+
+
+
+
+
+
+
+
