@@ -1,0 +1,8 @@
+D:\XNA 3.1 Projects\CG_P03\CG_P03\bin\x86\Debug\CG_P03.exe
+D:\XNA 3.1 Projects\CG_P03\CG_P03\bin\x86\Debug\CG_P03.pdb
+D:\XNA 3.1 Projects\CG_P03\CG_P03\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\XNA 3.1 Projects\CG_P03\CG_P03\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+D:\XNA 3.1 Projects\CG_P03\CG_P03\obj\x86\Debug\CG_P03.exe
+D:\XNA 3.1 Projects\CG_P03\CG_P03\obj\x86\Debug\CG_P03.pdb
+D:\XNA 3.1 Projects\CG_P03\CG_P03\bin\x86\Debug\XTL.dll
+D:\XNA 3.1 Projects\CG_P03\CG_P03\bin\x86\Debug\Content\SpriteFont1.xnb

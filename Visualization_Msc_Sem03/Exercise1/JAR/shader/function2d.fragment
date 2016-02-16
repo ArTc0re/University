@@ -1,0 +1,14 @@
+#version 330
+
+in vec4 color;
+out vec4 fragColor;
+
+
+void main() {
+		
+	float zNorm = color.z + 0.5f;
+	
+	
+	fragColor = vec4(zNorm , 1 - zNorm, 0, 1);
+	
+}

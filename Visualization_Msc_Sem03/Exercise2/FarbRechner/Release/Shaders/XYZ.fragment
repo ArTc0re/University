@@ -1,0 +1,67 @@
+﻿// author: Markus Strobel
+
+#version 330
+
+in vec4 vertex;
+out vec4 fragColor;
+
+//uniform mat3 XYZtoRGBMatrix;
+
+float ApplyGammaCorrection(float colorValue)
+{
+	float correctedValue = 0f;
+	if(colorValue <= 0.0031308f)
+		correctedValue = colorValue * 12.92f;
+	else
+		correctedValue = 1.055f * pow(colorValue, (1f / 2.4f)) - 0.055f;
+	return correctedValue;
+}
+
+vec4 XYZ_to_RGB(float x, float y)
+{
+	float Y = 1.0;
+	float X = x * ( Y / y );
+	float z = ( 1 - x - y );
+	float Z = z * (Y / y);
+
+	vec3 XYZ = vec3(X, Y, Z);
+	
+	float R = 3.2406f * X + -1.5372f * Y + -0.4986f * Z;
+    float G = -0.9689f * X + 1.8758f * Y + 0.0415f * Z;
+    float B = 0.0557f * X + -0.2040f * Y + 1.0570f * Z;
+		
+	//vec3 result = XYZtoRGBMatrix * XYZ;
+	//float R = result.x;
+	//float G = result.y;
+	//float B = result.z;
+
+	if(R < 0 || G < 0 || B < 0)
+	{
+		return vec4(0.3, 0.3, 0.3, 1);
+	}
+	else
+	{
+		// normalize
+		float maxV = max(R, max(G, B));
+		R = R / maxV;
+		G = G / maxV;
+		B = B / maxV;
+
+		R = ApplyGammaCorrection(R);
+		G = ApplyGammaCorrection(G);
+		B = ApplyGammaCorrection(B);
+
+		return vec4(R, G, B, 1);
+	}
+}
+
+
+void main()
+{	
+	fragColor = XYZ_to_RGB(vertex.x, vertex.y);
+}
+
+
+
+
+

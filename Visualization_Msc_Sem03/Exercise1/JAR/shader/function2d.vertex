@@ -1,0 +1,24 @@
+#version 330
+
+in vec3 position;
+out vec4 color;
+
+uniform float range;
+uniform mat4 modelMatrix;
+
+#define MathPI 3.1415926535897932384626433832795
+
+void main()
+{	
+
+	float inputValue = sqrt( pow(position.x, 2) + pow(position.y, 2) ) / (range / 35);
+	// 2D Sinc function
+	float z = sin(  (180 * -inputValue) / MathPI  ) / inputValue;
+	
+	vec4 result = vec4(position.x, position.y, z / range, 1);
+		
+	color = result;
+	
+	gl_Position = modelMatrix * result;
+
+}

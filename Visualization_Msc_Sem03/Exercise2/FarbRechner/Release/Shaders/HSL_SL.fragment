@@ -1,0 +1,88 @@
+﻿// author: Markus Strobel
+
+#version 330
+
+in vec4 vertex;
+out vec4 fragColor;
+
+uniform float Hue;
+
+vec4 HSLtoRGB(float Hue, float Saturation, float Luminance)
+{
+			while(Hue > 180)
+			{
+				Hue -= 360;
+			}
+
+			vec4 RGBA = vec4(0, 0, 0, 1);
+
+            float C = (1f - abs(2f * Luminance - 1f)) * Saturation;
+            float X = C * (1f - abs(mod((Hue / 60f) , 2f) - 1f));
+            float m = Luminance - C / 2f;
+
+            if (0f <= Hue && Hue < 60f) {
+                RGBA.x = C;
+                RGBA.y = X;
+                RGBA.z = 0;
+            }
+            else if (60f <= Hue && Hue < 120f)
+            {
+                RGBA.x = X;
+                RGBA.y = C;
+                RGBA.z = 0;
+            }
+            else if (120f <= Hue && Hue < 180f)
+            {
+                RGBA.x = 0;
+                RGBA.y = C;
+                RGBA.z = X;
+            }
+            else if (0 >= Hue && Hue > -60f)
+            {			
+                RGBA.x = C;
+                RGBA.y = 0;
+                RGBA.z = X;
+            }
+            else if (-60f >= Hue && Hue > -120f)
+            {			
+                RGBA.x = X;
+                RGBA.y = 0;
+                RGBA.z = C;
+            }
+            else if (-120f >= Hue && Hue > -180f)
+            {
+			    RGBA.x = 0;
+                RGBA.y = X;
+                RGBA.z = C;
+            }
+			
+			RGBA.x += m;
+            RGBA.y += m;
+            RGBA.z += m;
+
+	return RGBA;
+}
+
+vec2 GetSL(float x, float y)
+{
+	// the rect is in between 0.25 - 0.75, we shift it to 0.0 - 0.5 to easily compute with these numbers
+	x = (x - 0.25f ) * 2;
+	y = (y - 0.25f ) * 2;
+	float S = 0f;
+	float L = 0f;
+	S = x * 0.5f + y * 0.5f;
+	L = (1 - x) * 0.5f + y * 0.5f;
+
+	return  vec2(S, L);
+}
+
+void main()
+{	
+	vec2 SL = GetSL(vertex.x, vertex.y);
+	fragColor = HSLtoRGB(Hue, SL.x, SL.y);
+}
+
+
+
+
+

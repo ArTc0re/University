@@ -1,0 +1,15 @@
+﻿// author: Markus Strobel
+
+#version 330
+
+in vec3 position;
+out vec4 vertex;
+out vec4 gl_Position;
+
+uniform mat4 modelMatrix;
+
+void main()
+{
+	vertex = vec4(position, 1);
+	gl_Position = modelMatrix * vertex ;
+}

@@ -1,0 +1,95 @@
+﻿// author: Markus Strobel
+
+#version 330
+
+in vec4 vertex;
+out vec4 fragColor;
+
+#define M_PI 3.1415926535897932384626433832795
+
+
+
+vec4 HSLtoRGB(float Hue, float Saturation, float Luminance)
+{
+			vec4 RGBA = vec4(0, 0, 0, 1);
+
+            float C = (1f - abs(2f * Luminance - 1f)) * Saturation;
+            float X = C * (1f - abs(mod((Hue / 60f) , 2f) - 1f));
+            float m = Luminance - C / 2f;
+
+            if (0f <= Hue && Hue < 60f) {
+                RGBA.x = C;
+                RGBA.y = X;
+                RGBA.z = 0;
+            }
+            else if (60f <= Hue && Hue < 120f)
+            {
+                RGBA.x = X;
+                RGBA.y = C;
+                RGBA.z = 0;
+            }
+            else if (120f <= Hue && Hue < 180f)
+            {
+                RGBA.x = 0;
+                RGBA.y = C;
+                RGBA.z = X;
+            }
+            else if (0 >= Hue && Hue > -60f)
+            {			
+                RGBA.x = C;
+                RGBA.y = 0;
+                RGBA.z = X;
+            }
+            else if (-60f >= Hue && Hue > -120f)
+            {			
+                RGBA.x = X;
+                RGBA.y = 0;
+                RGBA.z = C;
+            }
+            else if (-120f >= Hue && Hue > -180f)
+            {
+			    RGBA.x = 0;
+                RGBA.y = X;
+                RGBA.z = C;
+            }
+			
+			RGBA.x += m;
+            RGBA.y += m;
+            RGBA.z += m;
+
+	return RGBA;
+}
+
+vec4 RGBFromHSL_H(float x, float y)
+{
+	float xCenter = 0.5f;
+	float yCenter = 0.5f;
+
+	float deltaX = x - xCenter;
+	float deltaY = y - yCenter;
+
+	float H = atan(deltaY , deltaX) * 180.0 / M_PI;
+	while(H > 360)
+	{	
+		H = H - 360;
+	}
+
+	float S = 1;
+	float L = 0.5f;
+	
+	return HSLtoRGB(H, S, L);
+}
+
+
+
+
+
+void main()
+{	
+	fragColor = RGBFromHSL_H(vertex.x, vertex.y);
+}
+
+
+
+
+
