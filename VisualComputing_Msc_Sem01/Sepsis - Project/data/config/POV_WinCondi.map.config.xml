@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!-- Version AB 1.2 -->
+<map-config>
+	<name>POV_WinCondi</name>
+	<winconditions>
+		<extinction>true</extinction>
+		<goodplacements>
+			<neededconditions>2</neededconditions>
+			<goodplacement>
+				<good>1</good>
+				<amount>3</amount>	
+				<playerindex>0</playerindex>
+				<fieldx>8</fieldx>
+				<fieldy>18</fieldy>
+			</goodplacement>
+			<goodplacement>
+				<good>1</good>
+				<amount>100</amount>	
+				<playerindex>1</playerindex>
+				<fieldx>14</fieldx>
+				<fieldy>13</fieldy>
+			</goodplacement>
+			<goodplacement>
+				<good>3</good>
+				<amount>54</amount>	
+				<playerindex>1</playerindex>
+				<fieldx>15</fieldx>
+				<fieldy>8</fieldy>
+			</goodplacement>
+			<goodplacement>
+				<good>2</good>
+				<amount>15</amount>	
+				<playerindex>0</playerindex>
+				<fieldx>20</fieldx>
+				<fieldy>18</fieldy>
+			</goodplacement>
+		</goodplacements>
+	</winconditions>
+</map-config>

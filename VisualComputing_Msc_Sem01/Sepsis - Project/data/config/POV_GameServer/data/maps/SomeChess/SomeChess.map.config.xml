@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!-- Version AB 1.2 -->
+<map-config>
+	<name>SomeChess</name>
+		<description>Das Ziel dieser Karte ist es seinen König, die HeavyCargo-Unit auf das vom Gengner bewachte, Goodplacement zu platzieren oder alle Einheiten des Gegner zu eliminieren.</description>
+	<winconditions>
+		<extinction>true</extinction>
+		<goodplacements>
+			<neededconditions>1</neededconditions>
+			<goodplacement>
+				<good>5</good>
+				<amount>1000</amount>	
+				<playerindex>1</playerindex>
+				<fieldx>0</fieldx>
+				<fieldy>5</fieldy>
+			</goodplacement>
+			<goodplacement>
+				<good>5</good>
+				<amount>1000</amount>	
+				<playerindex>0</playerindex>
+				<fieldx>9</fieldx>
+				<fieldy>5</fieldy>
+			</goodplacement>
+		</goodplacements>
+	</winconditions>
+</map-config>

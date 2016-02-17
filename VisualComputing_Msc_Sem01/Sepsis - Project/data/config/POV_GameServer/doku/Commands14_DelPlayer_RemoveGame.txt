@@ -1,0 +1,62 @@
+type:getclients clientid:Client0001 end:end
+type:logon clientid:Client0001 clientinfo: end:end
+type:getclients clientid:Client0001 end:end
+type:getinfo clientid:Client0001 clientkey:OXOCLIENTKEYOXO requestclientid:Client0001 end:end
+type:sendgamedata clientid:Client0001 clientkey:OXOCLIENTKEYOXO data[[info][infotype=maplist]] end:end
+[COMMENT] Create a game and remove game 
+type:sendgamedata clientid:Client0001 clientkey:OXOCLIENTKEYOXO data[[option][[creategame][mapid=Tradestation_Trade gamename=Subview gameownerkey=Bussard]]] end:end
+type:sendgamedata clientid:Client0001 clientkey:OXOCLIENTKEYOXO data[[info][infotype=gamelist]] end:end
+type:sendgamedata clientid:Client0001 clientkey:OXOCLIENTKEYOXO data[[option][[addplayer][gameid=OXOGAMEIDOXO playername=OXOPLAYERNAMEOXO]]] end:end
+type:sendgamedata clientid:Client0001 clientkey:OXOCLIENTKEYOXO data[[info][infotype=unittype mapid=Tradestation_Trade]] end:end
+[NEXTPLAYER]
+type:sendgamedata clientid:Client0001 clientkey:OXOCLIENTKEYOXO data[[option][[addplayer][gameid=OXOGAMEIDOXO playername=OXOPLAYERNAMEOXO]]] end:end
+[NEXTPLAYER]
+type:sendgamedata clientid:Client0001 clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=gameinfo gameid=OXOGAMEIDOXO]] end:end
+[NEXTPLAYER]
+
+type:sendgamedata clientid:Client0001 clientkey:OXOCLIENTKEYOXO data[[option][[removegame][gameid=OXOGAMEIDOXO gameownerkey=OXOGAMEKEYOXO]]] end:end
+type:sendgamedata clientid:Client0001 clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=gameinfo gameid=OXOGAMEIDOXO]] end:end
+type:sendgamedata clientid:Client0001 clientkey:OXOCLIENTKEYOXO data[[info][infotype=gamelist]] end:end
+
+[COMMENT] create game, delplayer and remove game
+type:sendgamedata clientid:Client0001 clientkey:OXOCLIENTKEYOXO data[[option][[creategame][mapid=Tradestation_Trade gamename=Subview gameownerkey=Bussard]]] end:end
+type:sendgamedata clientid:Client0001 clientkey:OXOCLIENTKEYOXO data[[info][infotype=gamelist]] end:end
+type:sendgamedata clientid:Client0001 clientkey:OXOCLIENTKEYOXO data[[option][[addplayer][gameid=OXOGAMEIDOXO playername=OXOPLAYERNAMEOXO]]] end:end
+[NEXTPLAYER]
+type:sendgamedata clientid:Client0001 clientkey:OXOCLIENTKEYOXO data[[option][[addplayer][gameid=OXOGAMEIDOXO playername=OXOPLAYERNAMEOXO]]] end:end
+type:sendgamedata clientid:Client0001 clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=gameinfo gameid=OXOGAMEIDOXO]] end:end
+[COMMENT] delplayer with other player
+[NEXTPLAYER]
+type:sendgamedata clientid:Client0001 clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[option][[delplayer][gameid=OXOGAMEIDOXO playerdelid=OXONEXTPLAYERIDOXO gameownerkey=Bussard]]] end:end
+type:sendgamedata clientid:Client0001 clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=gameinfo gameid=OXOGAMEIDOXO]] end:end
+
+type:sendgamedata clientid:Client0001 clientkey:OXOCLIENTKEYOXO data[[option][[removegame][gameid=OXOGAMEIDOXO gameownerkey=OXOGAMEKEYOXO]]] end:end
+type:sendgamedata clientid:Client0001 clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=gameinfo gameid=OXOGAMEIDOXO]] end:end
+type:sendgamedata clientid:Client0001 clientkey:OXOCLIENTKEYOXO data[[info][infotype=gamelist]] end:end
+
+[COMMENT] create game, delplayer and remove game
+type:sendgamedata clientid:Client0001 clientkey:OXOCLIENTKEYOXO data[[option][[creategame][mapid=Tradestation_Trade gamename=Subview gameownerkey=Bussard]]] end:end
+type:sendgamedata clientid:Client0001 clientkey:OXOCLIENTKEYOXO data[[info][infotype=gamelist]] end:end
+type:sendgamedata clientid:Client0001 clientkey:OXOCLIENTKEYOXO data[[option][[addplayer][gameid=OXOGAMEIDOXO playername=OXOPLAYERNAMEOXO]]] end:end
+[NEXTPLAYER]
+[COMMENT] delplayer with own player
+type:sendgamedata clientid:Client0001 clientkey:OXOCLIENTKEYOXO data[[option][[addplayer][gameid=OXOGAMEIDOXO playername=OXOPLAYERNAMEOXO]]] end:end
+type:sendgamedata clientid:Client0001 clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[option][[delplayer][gameid=OXOGAMEIDOXO playerdelid=OXOPLAYERIDOXO]]] end:end
+type:sendgamedata clientid:Client0001 clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=gameinfo gameid=OXOGAMEIDOXO]] end:end
+type:sendgamedata clientid:Client0001 clientkey:OXOCLIENTKEYOXO data[[option][[addplayer][gameid=OXOGAMEIDOXO playername=OXOPLAYERNAMEOXO]]] end:end
+[NEXTPLAYER]
+type:sendgamedata clientid:Client0001 clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=gameinfo gameid=OXOGAMEIDOXO]] end:end
+type:sendgamedata clientid:Client0001 clientkey:OXOCLIENTKEYOXO data[[option][[removegame][gameid=OXOGAMEIDOXO gameownerkey=OXOGAMEKEYOXO]]] end:end
+type:sendgamedata clientid:Client0001 clientkey:OXOCLIENTKEYOXO data[[info][infotype=gamelist]] end:end
+
+[COMMENT] Create and finally start a game
+type:sendgamedata clientid:Client0001 clientkey:OXOCLIENTKEYOXO data[[option][[creategame][mapid=Tradestation_Trade gamename=Subview gameownerkey=Bussard]]] end:end
+type:sendgamedata clientid:Client0001 clientkey:OXOCLIENTKEYOXO data[[info][infotype=gamelist]] end:end
+type:sendgamedata clientid:Client0001 clientkey:OXOCLIENTKEYOXO data[[option][[addplayer][gameid=OXOGAMEIDOXO playername=OXOPLAYERNAMEOXO]]] end:end
+type:sendgamedata clientid:Client0001 clientkey:OXOCLIENTKEYOXO data[[info][infotype=unittype mapid=Tradestation_Trade]] end:end
+[NEXTPLAYER]
+type:sendgamedata clientid:Client0001 clientkey:OXOCLIENTKEYOXO data[[option][[addplayer][gameid=OXOGAMEIDOXO playername=OXOPLAYERNAMEOXO]]] end:end
+[NEXTPLAYER]
+type:sendgamedata clientid:Client0001 clientkey:OXOCLIENTKEYOXO data[[option][[startgame][gameid=OXOGAMEIDOXO gameownerkey=Bussard]]] end:end
+type:sendgamedata clientid:Client0001 clientkey:OXOCLIENTKEYOXO data[[info][infotype=gamelist]] end:end
+type:sendgamedata clientid:Client0001 clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=gameinfo gameid=OXOGAMEIDOXO]] end:end

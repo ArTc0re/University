@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<!-- Version AB 1.2 -->
+<map-config>
+	<name>Tradestation</name>
+	<description>Some text ...</description>
+	<tradestations>
+		<tradestation>
+			<stationid>Boomer</stationid>
+			<unitid>101</unitid>
+			<friendlyplayerindices>0,1</friendlyplayerindices>
+			<posx>20</posx>
+			<posy>20</posy>
+			<termsoftrade>
+					<!-- Relativ zu einer fiktiven Einheit  --> 
+					<tradeequivalence1>1</tradeequivalence1>
+					<tradeequivalence2>2</tradeequivalence2>
+					<tradeequivalence3>3</tradeequivalence3>
+					<tradeequivalence4>2</tradeequivalence4>
+					<tradeequivalence5>1</tradeequivalence5>
+					<availablegoods1>2000</availablegoods1>
+					<availablegoods2>0</availablegoods2>
+					<availablegoods3>500</availablegoods3>
+					<availablegoods4>20</availablegoods4>
+					<availablegoods5>900</availablegoods5>
+			</termsoftrade>
+		</tradestation>
+		<tradestation>
+			<stationid>Big Bear</stationid>
+			<unitid>102</unitid>
+			<friendlyplayerindices>1</friendlyplayerindices>
+			<posx>4</posx>
+			<posy>10</posy>
+			<termsoftrade>
+					<!-- Relativ zu einer fiktiven Einheit  --> 
+					<tradeequivalence1>3</tradeequivalence1>
+					<tradeequivalence2>42</tradeequivalence2>
+					<tradeequivalence3>5</tradeequivalence3>
+					<tradeequivalence4>1</tradeequivalence4>
+					<tradeequivalence5>11</tradeequivalence5>
+					<availablegoods1>0</availablegoods1>
+					<availablegoods2>400</availablegoods2>
+					<availablegoods3>500</availablegoods3>
+					<availablegoods4>780</availablegoods4>
+					<availablegoods5>0</availablegoods5>
+			</termsoftrade>
+		</tradestation>
+		<tradestation>
+			<stationid>Little Bear</stationid>
+			<unitid>103</unitid>
+			<posx>11</posx>
+			<posy>5</posy>
+			<termsoftrade>
+					<!-- Relativ zu einer fiktiven Einheit  --> 
+					<tradeequivalence1>10</tradeequivalence1>
+					<tradeequivalence2>1</tradeequivalence2>
+					<tradeequivalence3>5</tradeequivalence3>
+					<tradeequivalence4>2</tradeequivalence4>
+					<tradeequivalence5>1</tradeequivalence5>
+					<availablegoods1>00</availablegoods1>
+					<availablegoods2>45</availablegoods2>
+					<availablegoods3>2500</availablegoods3>
+					<availablegoods4>50</availablegoods4>
+					<availablegoods5>9000</availablegoods5>
+			</termsoftrade>
+		</tradestation>
+		<tradestation>
+			<stationid>Kingfisher</stationid>
+			<unitid>333</unitid>
+			<posx>10</posx>
+			<posy>5</posy>
+			<termsoftrade>
+					<!-- Relativ zu einer fiktiven Einheit  --> 
+					<tradeequivalence1>10</tradeequivalence1>
+					<tradeequivalence2>1</tradeequivalence2>
+					<tradeequivalence3>5</tradeequivalence3>
+					<tradeequivalence4>2</tradeequivalence4>
+					<tradeequivalence5>1</tradeequivalence5>
+			</termsoftrade>
+		</tradestation>
+	</tradestations>
+</map-config>

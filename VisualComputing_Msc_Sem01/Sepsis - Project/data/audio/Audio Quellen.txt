@@ -1,0 +1,6 @@
+menu_click.wav: http://www.freesound.org/people/NenadSimic/sounds/157538/
+playingfield_unitselected: http://www.freesound.org/people/DrMinky/sounds/167045/
+playingfield_unitmoving: http://www.freesound.org/people/Benboncan/sounds/82390/
+playingfield_unitattacking: http://www.freesound.org/people/Jamius/sounds/41530/
+playingfield_unittrading: http://www.freesound.org/people/DrMinky/sounds/167045/
+playingfield_unitdieing.wav: http://www.freesound.org/people/m_O_m/sounds/121748/

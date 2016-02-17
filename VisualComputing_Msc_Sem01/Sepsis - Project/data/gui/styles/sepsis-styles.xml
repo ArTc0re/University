@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nifty-styles>
+
+
+	<!-- SEPSIS TEXT STYLES -->
+	<style id="sepsis-text_normal_1">
+		<attributes font="aurulent-sans-16.fnt"/>
+	</style>
+	<style id="sepsis-text_normal_2">
+		<attributes font="gui/styles/text.fnt"/>
+	</style>	
+	<style id="sepsis-text_normal_3">
+		<attributes font="gui/styles/code.fnt"/>
+	</style>		
+	<style id="sepsis-text_normal_4">
+		<attributes font="gui/styles/menu-font.fnt"/>
+	</style>		
+	
+	<style id="sepsis-text-title_1">
+		<attributes font="aurulent-sans-36-bold-with-shadow.fnt"/>
+	</style>
+	<style id="sepsis-text-title_2">
+		<attributes font="gui/styles/caption.fnt"/>
+	</style>
+
+	
+
+	<!-- SEPSIS PANEL STYLES -->
+	<style id="sepsis-panel_1">
+		<attributes backgroundImage="gui/styles/panel1.png" imageMode="resize:34,360,34,34,34,360,34,160,34,360,34,34" />
+	</style>
+
+	<!-- SPECIFIC PANELS -->
+	<style id="panel_leftright_topless">
+		<attributes backgroundImage="gui/styles/panel_leftright_topless.png"/>
+	</style>
+	<style id="panel_leftright_topless_overlay">
+		<effect>
+			<onHover name="imageOverlay" filename="gui/styles/panel_leftright_topless2.png" post="true" imageMode="normal" neverStopRendering="true"/>
+		</effect>
+	</style>
+	
+	<style id="panel1_right_bottomless">
+		<attributes backgroundImage="gui/styles/panel1_right_bottomless.png"/>
+	</style>
+	
+	<style id="panel1_left_bottomless">
+		<attributes backgroundImage="gui/styles/panel1_left_bottomless.png"/>
+	</style>
+	
+	<style id="panel1_left_topless">
+		<attributes backgroundImage="gui/styles/panel1_left_topless.png"/>
+	</style>
+	<style id="panel1_left_topless_overlay">
+		<attributes backgroundImage="gui/styles/panel1_left_topless.png"/>
+		<effect>
+			<onHover name="imageOverlay" filename="gui/styles/panel1_left_topless2.png" post="true" imageMode="normal" neverStopRendering="true"/>
+		</effect>
+	</style>
+	
+	
+	<!-- SEPSIS BUTTON STYLES -->
+	<style id="sepsis-button#panel">
+		<attributes backgroundImage="gui/styles/button.png" imageMode="normal" childLayout="center" visibleToMouse="true" />
+		<effect>
+			<onHover name="border" color="#ffffff" post="true" />
+			<onFocus name="imageOverlay" filename="gui/styles/button2.png" imageMode="normal" post="true" />
+			<onEnabled name="renderQuad" startColor="#2228" endColor="#2220" post="true" length="150" />
+			<onDisabled name="renderQuad" startColor="#2220" endColor="#2228" post="true" length="150" />
+		</effect>
+	</style>
+
+	<style id="sepsis-button#text" base="button-font">
+		<attributes align="center" valign="center" textHAlign="center" textVAlign="center" visibleToMouse="false"/>
+		<effect>
+      <onEnabled name="textColorAnimated" startColor="#8886" endColor="#eeef" post="false" length="150" />
+      <onDisabled name="textColorAnimated" startColor="#eeef" endColor="#8886" post="false" length="150" />
+		</effect>
+	</style>
+	
+
+	
+	<!-- GOODS IMAGES--> 	
+	<style id="Adenin">
+		<attributes backgroundImage="images/Adenin.png"/>
+	</style>
+	<style id="Cytosin">
+		<attributes backgroundImage="images/Cytosin.png"/>
+	</style>
+	<style id="Guanin">
+		<attributes backgroundImage="images/Guanin.png"/>
+	</style>
+	<style id="Thymin">
+		<attributes backgroundImage="images/Thymin.png"/>
+	</style>
+	<style id="Uracil">
+		<attributes backgroundImage="images/Uracil.png"/>
+	</style>
+	
+</nifty-styles>

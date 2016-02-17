@@ -1,0 +1,66 @@
+type:getclients clientid:OXOCLIENTIDOXO end:end
+type:logon clientid:OXOCLIENTIDOXO clientinfo: end:end
+
+[COMMENT] Create and start game NoQuad_Samllest 
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[info][infotype=mappreview mapid=NoQuad_Smallest]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[option][[creategame][mapid=NoQuad_Smallest gamename=OXONEWGAMENAMEOXO gameownerkey=OXOGAMEKEYOXO]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[info][infotype=gamelist]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[option][[addplayer][gameid=OXOGAMEIDOXO playername=OXOPLAYERNAMEOXO]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[info][infotype=unittype mapid=POV]] end:end
+[NEXTPLAYER]
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[option][[addplayer][gameid=OXOGAMEIDOXO playername=OXOPLAYERNAMEOXO]]] end:end
+[NEXTPLAYER]
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=gameinfo gameid=OXOGAMEIDOXO]] end:end
+[NEXTPLAYER]
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[option][[startgame][gameid=OXOGAMEIDOXO gameownerkey=OXOGAMEKEYOXO]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=gameinfo gameid=OXOGAMEIDOXO]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=unitinfo unitid=7 gameid=OXOGAMEIDOXO]] end:end
+
+[COMMENT] Playgame smallest 
+[NEXTPLAYER]
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[attack][attackerid=4 defenderid=7 gameid=OXOGAMEIDOXO]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[endturn][unitid=4 gameid=OXOGAMEIDOXO]]] end:end
+[NEXTPLAYER]
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[attack][attackerid=7 defenderid=4 gameid=OXOGAMEIDOXO]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[endturn][unitid=7 gameid=OXOGAMEIDOXO]]] end:end
+[NEXTPLAYER]
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[attack][attackerid=4 defenderid=7 gameid=OXOGAMEIDOXO]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[endturn][unitid=4 gameid=OXOGAMEIDOXO]]] end:end
+[NEXTPLAYER]
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[attack][attackerid=7 defenderid=4 gameid=OXOGAMEIDOXO]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[endturn][unitid=7 gameid=OXOGAMEIDOXO]]] end:end
+[NEXTPLAYER]
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[attack][attackerid=4 defenderid=7 gameid=OXOGAMEIDOXO]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[endturn][unitid=4 gameid=OXOGAMEIDOXO]]] end:end
+[NEXTPLAYER]
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[attack][attackerid=7 defenderid=4 gameid=OXOGAMEIDOXO]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[endturn][unitid=7 gameid=OXOGAMEIDOXO]]] end:end
+[NEXTPLAYER]
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[attack][attackerid=4 defenderid=7 gameid=OXOGAMEIDOXO]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[endturn][unitid=4 gameid=OXOGAMEIDOXO]]] end:end
+[NEXTPLAYER]
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[attack][attackerid=7 defenderid=4 gameid=OXOGAMEIDOXO]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[endturn][unitid=7 gameid=OXOGAMEIDOXO]]] end:end
+[NEXTPLAYER]
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[attack][attackerid=4 defenderid=7 gameid=OXOGAMEIDOXO]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[endturn][unitid=4 gameid=OXOGAMEIDOXO]]] end:end
+[NEXTPLAYER]
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[attack][attackerid=7 defenderid=4 gameid=OXOGAMEIDOXO]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[endturn][unitid=7 gameid=OXOGAMEIDOXO]]] end:end
+[NEXTPLAYER]
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[attack][attackerid=4 defenderid=7 gameid=OXOGAMEIDOXO]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[endturn][unitid=4 gameid=OXOGAMEIDOXO]]] end:end
+[NEXTPLAYER]
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[attack][attackerid=7 defenderid=4 gameid=OXOGAMEIDOXO]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[endturn][unitid=7 gameid=OXOGAMEIDOXO]]] end:end
+[NEXTPLAYER]
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[attack][attackerid=4 defenderid=7 gameid=OXOGAMEIDOXO]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[endturn][unitid=4 gameid=OXOGAMEIDOXO]]] end:end
+[NEXTPLAYER]
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[attack][attackerid=7 defenderid=4 gameid=OXOGAMEIDOXO]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[endturn][unitid=7 gameid=OXOGAMEIDOXO]]] end:end
+[NEXTPLAYER]
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[attack][attackerid=4 defenderid=7 gameid=OXOGAMEIDOXO]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[endturn][unitid=4 gameid=OXOGAMEIDOXO]]] end:end
+[NEXTPLAYER]
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[option][[removegame][gameid=OXOGAMEIDOXO gameownerkey=OXOGAMEKEYOXO]]] end:end

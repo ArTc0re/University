@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>No Comment</comment>
+<entry key="server.port">1504</entry>
+<entry key="server.id">RabbitONE_POVGameServer</entry>
+<entry key="server.xframeoffset">0</entry>
+<entry key="server.password">LuxusApfel</entry>
+<entry key="server.title">POV-GameServer v0.8.12</entry>
+<entry key="server.gui">true</entry>
+<entry key="server.gui.stepdelay">10</entry>
+<entry key="server.gui.imageunknown">dino/caveman_48x48.png</entry>
+<entry key="server.gui.imagefigthersmall">dino/dino_green_48x48.png</entry>
+<entry key="server.gui.imagefigthermedium">dino/dino_green_48x48.png</entry>
+<entry key="server.gui.imagefigtherheavy">dino/dino_green_48x48.png</entry>
+<entry key="server.gui.imagecargosmall">dino/dino_orange_48x48.png</entry>
+<entry key="server.gui.imagecargoheavy">dino/dino_orange_48x48.png</entry>
+<entry key="server.gui.imagetradestation">dino/dino_blue_48x48.png</entry>
+<entry key="server.gui.imagecargogood0">oxygen/Actions-flag-blue-icon.png</entry>
+<entry key="server.gui.imagecargogood1">oxygen/Actions-flag-yellow-icon.png</entry>
+<entry key="server.gui.imagecargogood2">oxygen/Actions-flag-red-icon.png</entry>
+<entry key="server.gui.imagecargogood3">oxygen/Actions-flag-black-icon.png</entry>
+<entry key="server.gui.imagecargogood4">oxygen/Actions-flag-green-icon.png</entry>
+</properties>

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!-- Version AB 1.2 -->
+<map-config>
+	<name>Basic</name>
+	<description>Some text ...</description>
+	<winconditions>
+		<extinction>true</extinction>
+		<goodplacements>
+			<neededconditions>2</neededconditions>
+			<goodplacement>
+				<good>1</good>
+				<fieldx>12</fieldx>
+				<fieldy>13</fieldy>
+				<playerindex>0</playerindex>
+				<amount>100</amount>	
+			</goodplacement>
+			<goodplacement>
+				<good>1</good>
+				<fieldx>14</fieldx>
+				<fieldy>13</fieldy>
+				<playerindex>0</playerindex>
+				<amount>100</amount>
+			</goodplacement>
+			<goodplacement>
+				<good>3</good>
+				<fieldx>15</fieldx>
+				<fieldy>8</fieldy>
+				<playerindex>1</playerindex>
+				<amount>54</amount>
+			</goodplacement>
+		</goodplacements>
+	</winconditions>
+</map-config>

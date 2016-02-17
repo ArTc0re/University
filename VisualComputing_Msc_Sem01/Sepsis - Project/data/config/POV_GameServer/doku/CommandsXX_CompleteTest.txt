@@ -1,0 +1,460 @@
+[COMMENT] Reset Server and Surrender Test
+type:getclients clientid:OXOCLIENTIDOXO end:end
+type:logon clientid:OXOCLIENTIDOXO clientinfo: end:end
+type:getclients clientid:OXOCLIENTIDOXO end:end
+type:getinfo clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO requestclientid:OXOCLIENTIDOXO end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[info][infotype=maplist]] end:end
+[COMMENT] Create a game and remove game 
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[option][[creategame][mapid=Tradestation_Trade gamename=OXONEWGAMENAMEOXO gameownerkey=OXOGAMEKEYOXO]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[info][infotype=gamelist]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[option][[addplayer][gameid=OXOGAMEIDOXO playername=OXOPLAYERNAMEOXO]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[info][infotype=unittype mapid=Tradestation_Trade]] end:end
+[NEXTPLAYER]
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[option][[addplayer][gameid=OXOGAMEIDOXO playername=OXOPLAYERNAMEOXO]]] end:end
+[NEXTPLAYER]
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=gameinfo gameid=OXOGAMEIDOXO]] end:end
+[NEXTPLAYER]
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[option][[removegame][gameid=OXOGAMEIDOXO gameownerkey=OXOGAMEKEYOXO]]] end:end
+[COMMENT] Checking for unknown (delted) gamieid
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=gameinfo gameid=OXOGAMEIDOXO]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[info][infotype=gamelist]] end:end
+
+[COMMENT] create game, delplayer and remove game
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[option][[creategame][mapid=Tradestation_Trade gamename=OXONEWGAMENAMEOXO gameownerkey=OXOGAMEKEYOXO]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[info][infotype=gamelist]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[option][[addplayer][gameid=OXOGAMEIDOXO playername=OXOPLAYERNAMEOXO]]] end:end
+[NEXTPLAYER]
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[option][[addplayer][gameid=OXOGAMEIDOXO playername=OXOPLAYERNAMEOXO]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[option][[delplayer][gameid=OXOGAMEIDOXO playerdelid=OXOPLAYERIDOXO]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[option][[addplayer][gameid=OXOGAMEIDOXO playername=OXOPLAYERNAMEOXO]]] end:end
+[NEXTPLAYER]
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[info][infotype=gamelist]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=gameinfo gameid=OXOGAMEIDOXO]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[option][[removegame][gameid=OXOGAMEIDOXO gameownerkey=OXOGAMEKEYOXO]]] end:end
+[COMMENT] Checking for unknown (delted) gamieid
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=gameinfo gameid=OXOGAMEIDOXO]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[info][infotype=gamelist]] end:end
+
+[COMMENT] Create and finally start a game
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[option][[creategame][mapid=Tradestation_Trade gamename=OXONEWGAMENAMEOXO gameownerkey=OXOGAMEKEYOXO]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[info][infotype=gamelist]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[option][[addplayer][gameid=OXOGAMEIDOXO playername=OXOPLAYERNAMEOXO]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[info][infotype=unittype mapid=Tradestation_Trade]] end:end
+[NEXTPLAYER]
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[option][[addplayer][gameid=OXOGAMEIDOXO playername=OXOPLAYERNAMEOXO]]] end:end
+[NEXTPLAYER]
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[option][[startgame][gameid=OXOGAMEIDOXO gameownerkey=OXOGAMEKEYOXO]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[info][infotype=gamelist]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=gameinfo gameid=OXOGAMEIDOXO]] end:end
+
+[COMMENT] Reset Server
+[COMMENT] type:reset clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO serverpassword:LuxusApfel end:end
+type:getclients clientid:OXOCLIENTIDOXO end:end
+[COMMENT] Checking for unknown (delted) clientid
+type:getinfo clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO requestclientid:OXOCLIENTIDOXO end:end
+
+[COMMENT] SCRIPT Movement Tester
+type:getclients clientid:OXOCLIENTIDOXO end:end
+type:logon clientid:OXOCLIENTIDOXO clientinfo: end:end|
+type:getclients clientid:OXOCLIENTIDOXO end:end
+type:getinfo clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO requestclientid:OXOCLIENTIDOXO end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[info][infotype=maplist]] end:end
+
+[COMMENT] Get some infos
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[info][infotype=mappreview mapid=Two]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[info][infotype=winconditions mapid=Two]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[info][infotype=mappreview mapid=POV_WinCondi]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[info][infotype=winconditions mapid=POV_WinCondi]] end:end
+
+[COMMENT] Create and start game with 2 players 
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[option][[creategame][mapid=POV_WinCondi gamename=OXONEWGAMENAMEOXO gameownerkey=OXOGAMEKEYOXO]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[info][infotype=gamelist]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[option][[addplayer][gameid=OXOGAMEIDOXO playername=OXOPLAYERNAMEOXO]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[info][infotype=unittype mapid=POV]] end:end
+[NEXTPLAYER]
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[option][[addplayer][gameid=OXOGAMEIDOXO playername=OXOPLAYERNAMEOXO]]] end:end
+[NEXTPLAYER]
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=gameinfo gameid=OXOGAMEIDOXO]] end:end
+[NEXTPLAYER]
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[option][[startgame][gameid=OXOGAMEIDOXO gameownerkey=OXOGAMEKEYOXO]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=terrainmap gameid=OXOGAMEIDOXO]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=unitmap gameid=OXOGAMEIDOXO]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=gameinfo gameid=OXOGAMEIDOXO]] end:end
+[NEXTPLAYER]
+
+[COMMENT] Testing unitInfo-Request
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=unitinfo unitid=8 gameid=OXOGAMEIDOXO]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=unitinfo unitid=6 gameid=OXOGAMEIDOXO]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=unitinfo unitid=7 gameid=OXOGAMEIDOXO]] end:end
+[NEXTPLAYER]
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=unitinfo unitid=8 gameid=OXOGAMEIDOXO]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=unitinfo unitid=6 gameid=OXOGAMEIDOXO]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=unitinfo unitid=7 gameid=OXOGAMEIDOXO]] end:end
+[NEXTPLAYER]
+
+[COMMENT] Test some moves and some Errors
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[move][unitid=6 path=[[14,17][13,18][13,19][12,19][11,19][10,19][9,18][8,18]] gameid=OXOGAMEIDOXO]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[endturn][unitid=6 gameid=OXOGAMEIDOXO]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=gameinfo gameid=OXOGAMEIDOXO]] end:end
+[NEXTPLAYER]
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=gameinfo gameid=OXOGAMEIDOXO]] end:end
+[COMMENT] Invoking error: too_many_opening_bracets_in_incoming_message
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[move][unitid=7 path=[[21,16][21,17][21,18][21,19][20,19] gameid=OXOGAMEIDOXO]]] end:end
+[COMMENT] Invoking error: illegal_move_from_23x22_to_21x18
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[move][unitid=7 path=[[23,16][23,17][23,18][23,19][23,20][23,21][23,22][21,18][21,19][20,19]] gameid=OXOGAMEIDOXO]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[move][unitid=7 path=[[21,16][21,17][21,18][21,19][20,19][19,20]] gameid=OXOGAMEIDOXO]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[endturn][unitid=7 gameid=OXOGAMEIDOXO]]] end:end
+[NEXTPLAYER]
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[move][unitid=8 path=[[8,16][9,16][10,16][11,16][12,16][13,16][13,17][13,18][13,19][14,19][15,19][16,19][17,19][18,19][19,19][20,19][20,18]] gameid=OXOGAMEIDOXO]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=gameinfo gameid=OXOGAMEIDOXO]] end:end
+
+[NEXTPLAYER]
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=unitinfo unitid=8 gameid=OXOGAMEIDOXO]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=unitinfo unitid=6 gameid=OXOGAMEIDOXO]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=unitinfo unitid=7 gameid=OXOGAMEIDOXO]] end:end
+[NEXTPLAYER]
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=unitinfo unitid=8 gameid=OXOGAMEIDOXO]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=unitinfo unitid=6 gameid=OXOGAMEIDOXO]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=unitinfo unitid=7 gameid=OXOGAMEIDOXO]] end:end
+
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[endturn][unitid=8 gameid=OXOGAMEIDOXO]]] end:end
+[COMMENT] Invoking error: game_ended
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=gameinfo gameid=OXOGAMEIDOXO]] end:end
+[NEXTPLAYER]
+[COMMENT] Invoking error: game_ended
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=gameinfo gameid=OXOGAMEIDOXO]] end:end
+[NEXTPLAYER]
+
+[COMMENT] Remove game
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[option][[removegame][gameid=OXOGAMEIDOXO gameownerkey=OXOGAMEKEYOXO]]] end:end
+[COMMENT] Invoking error: unkown_gameid
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=gameinfo gameid=OXOGAMEIDOXO]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[info][infotype=gamelist]] end:end
+
+[COMMENT] Script Testing delPlayer and removeGame
+
+[COMMENT] Create a game and remove game 
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[option][[creategame][mapid=Tradestation_Trade gamename=OXONEWGAMENAMEOXO gameownerkey=OXOGAMEKEYOXO]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[info][infotype=gamelist]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[option][[addplayer][gameid=OXOGAMEIDOXO playername=OXOPLAYERNAMEOXO]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[info][infotype=unittype mapid=Tradestation_Trade]] end:end
+[NEXTPLAYER]
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[option][[addplayer][gameid=OXOGAMEIDOXO playername=OXOPLAYERNAMEOXO]]] end:end
+[NEXTPLAYER]
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=gameinfo gameid=OXOGAMEIDOXO]] end:end
+[NEXTPLAYER]
+
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[option][[removegame][gameid=OXOGAMEIDOXO gameownerkey=OXOGAMEKEYOXO]]] end:end
+[COMMENT] Invoking error: unkown_gameid
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=gameinfo gameid=OXOGAMEIDOXO]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[info][infotype=gamelist]] end:end
+
+[COMMENT] create game, delplayer and remove game
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[option][[creategame][mapid=Tradestation_Trade gamename=OXONEWGAMENAMEOXO gameownerkey=OXOGAMEKEYOXO]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[info][infotype=gamelist]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[option][[addplayer][gameid=OXOGAMEIDOXO playername=OXOPLAYERNAMEOXO]]] end:end
+[NEXTPLAYER]
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[option][[addplayer][gameid=OXOGAMEIDOXO playername=OXOPLAYERNAMEOXO]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=gameinfo gameid=OXOGAMEIDOXO]] end:end
+[COMMENT] delplayer with other player
+[NEXTPLAYER]
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[option][[delplayer][gameid=OXOGAMEIDOXO playerdelid=OXONEXTPLAYERIDOXO gameownerkey=OXOGAMEKEYOXO]]] end:end
+[COMMENT] Invoking error: Max1359539077533_is_not_a_valid_player
+
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=gameinfo gameid=OXOGAMEIDOXO]] end:end
+
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[option][[removegame][gameid=OXOGAMEIDOXO gameownerkey=OXOGAMEKEYOXO]]] end:end
+[COMMENT] Invoking error: unkown_gameid
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=gameinfo gameid=OXOGAMEIDOXO]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[info][infotype=gamelist]] end:end
+
+[COMMENT] create game, delplayer and remove game
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[option][[creategame][mapid=Tradestation_Trade gamename=OXONEWGAMENAMEOXO gameownerkey=OXOGAMEKEYOXO]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[info][infotype=gamelist]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[option][[addplayer][gameid=OXOGAMEIDOXO playername=OXOPLAYERNAMEOXO]]] end:end
+[NEXTPLAYER]
+[COMMENT] delplayer with own player
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[option][[addplayer][gameid=OXOGAMEIDOXO playername=OXOPLAYERNAMEOXO]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[option][[delplayer][gameid=OXOGAMEIDOXO playerdelid=OXOPLAYERIDOXO]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=gameinfo gameid=OXOGAMEIDOXO]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[option][[addplayer][gameid=OXOGAMEIDOXO playername=OXOPLAYERNAMEOXO]]] end:end
+[NEXTPLAYER]
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=gameinfo gameid=OXOGAMEIDOXO]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[option][[removegame][gameid=OXOGAMEIDOXO gameownerkey=OXOGAMEKEYOXO]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[info][infotype=gamelist]] end:end
+
+[COMMENT] Create and finally start a game
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[option][[creategame][mapid=Tradestation_Trade gamename=OXONEWGAMENAMEOXO gameownerkey=OXOGAMEKEYOXO]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[info][infotype=gamelist]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[option][[addplayer][gameid=OXOGAMEIDOXO playername=OXOPLAYERNAMEOXO]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[info][infotype=unittype mapid=Tradestation_Trade]] end:end
+[NEXTPLAYER]
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[option][[addplayer][gameid=OXOGAMEIDOXO playername=OXOPLAYERNAMEOXO]]] end:end
+[NEXTPLAYER]
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[option][[startgame][gameid=OXOGAMEIDOXO gameownerkey=OXOGAMEKEYOXO]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[info][infotype=gamelist]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=gameinfo gameid=OXOGAMEIDOXO]] end:end
+
+[COMMENT] Script Testing Tradestations and TradeDistances
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[info][infotype=maplist]] end:end
+
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[info][infotype=mappreview mapid=Tradestation_Trade]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[info][infotype=winconditions mapid=Tradestation_Trade]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[info][infotype=tradestations mapid=Tradestation_Trade]] end:end
+
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[option][[creategame][mapid=Tradestation_Trade gamename=OXONEWGAMENAMEOXO gameownerkey=OXOGAMEKEYOXO]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[info][infotype=gamelist]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[option][[addplayer][gameid=OXOGAMEIDOXO playername=OXOPLAYERNAMEOXO]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[info][infotype=unittype mapid=Tradestation_Trade]] end:end
+[NEXTPLAYER]
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[option][[addplayer][gameid=OXOGAMEIDOXO playername=OXOPLAYERNAMEOXO]]] end:end
+[NEXTPLAYER]
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=gameinfo gameid=OXOGAMEIDOXO]] end:end
+[NEXTPLAYER]
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[option][[startgame][gameid=OXOGAMEIDOXO gameownerkey=OXOGAMEKEYOXO]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=unitinfo unitid=6 gameid=OXOGAMEIDOXO]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=unitinfo unitid=7 gameid=OXOGAMEIDOXO]] end:end
+[NEXTPLAYER]
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=unitinfo unitid=6 gameid=OXOGAMEIDOXO]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=unitinfo unitid=7 gameid=OXOGAMEIDOXO]] end:end
+
+[COMMENT] Moveing unit 6 to tradestation 101
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[move][unitid=6 path=[[14,17][13,18][14,19][14,20][14,21][15,21][16,21][17,21][18,21][19,21][20,21]] gameid=OXOGAMEIDOXO]]] end:end
+
+[COMMENT] Unit 6 offers a acceptable trade to tradestation 101 (and ends turn before tradereply)
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[trade][gameid=OXOGAMEIDOXO tradeoffererunitid=6 tradepartnerunitid=101 givegoods=[5,0,5,0,0] getgoods=[0,0,0,8,2]]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[endturn][unitid=6 gameid=OXOGAMEIDOXO]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=gameinfo gameid=OXOGAMEIDOXO]] end:end
+[NEXTPLAYER]
+
+[COMMENT] Moveing unit 7 to tradestation 101
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[move][unitid=7 path=[[21,16][21,17][21,18][21,19][20,19]] gameid=OXOGAMEIDOXO]]] end:end
+
+[COMMENT] unit 7 offering 4 impossible trades to tradestation 101
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[trade][gameid=OXOGAMEIDOXO tradeoffererunitid=7 tradepartnerunitid=101 givegoods=[100,0,5,0,5] getgoods=[0,10,0,10,0]]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[trade][gameid=OXOGAMEIDOXO tradeoffererunitid=7 tradepartnerunitid=101 givegoods=[1,0,5,0,5] getgoods=[0,100,0,10,0]]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[trade][gameid=OXOGAMEIDOXO tradeoffererunitid=7 tradepartnerunitid=101 givegoods=[1,0,5,0,5] getgoods=[2000,0,0,0,0]]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[trade][gameid=OXOGAMEIDOXO tradeoffererunitid=7 tradepartnerunitid=101 givegoods=[0,0,0,0,0] getgoods=[1,0,0,0,0]]]] end:end
+
+[COMMENT] unit 7 attacking tradestation 101
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[attack][attackerid=7 defenderid=101 gameid=OXOGAMEIDOXO]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[endturn][unitid=7 gameid=OXOGAMEIDOXO]]] end:end
+[NEXTPLAYER]
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=gameinfo gameid=OXOGAMEIDOXO]] end:end
+
+[COMMENT] Moveing unit 8 to tradestation 102
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[move][unitid=8 path=[[6,10][5,10]] gameid=OXOGAMEIDOXO]]] end:end
+
+[COMMENT] A trade to a nonfreindly tradestation
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[trade][gameid=OXOGAMEIDOXO tradeoffererunitid=8 tradepartnerunitid=102 givegoods=[5,3,0,1,0] getgoods=[0,0,9,0,5]]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[endturn][unitid=8 gameid=OXOGAMEIDOXO]]] end:end
+
+[COMMENT] Two trades from the distance
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[trade][gameid=OXOGAMEIDOXO tradeoffererunitid=5 tradepartnerunitid=6 givegoods=[5,3,0,1,0] getgoods=[0,0,9,0,5]]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[trade][gameid=OXOGAMEIDOXO tradeoffererunitid=5 tradepartnerunitid=333 givegoods=[5,3,0,1,0] getgoods=[0,0,9,0,5]]]] end:end
+
+[COMMENT] A rejected empty trade from unit 5 to unit 7
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[trade][gameid=OXOGAMEIDOXO tradeoffererunitid=5 tradepartnerunitid=7 givegoods=[0,0,0,0,0] getgoods=[0,0,0,0,0]]]] end:end
+[NEXTPLAYER]
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[reply][[tradereply][gameid=OXOGAMEIDOXO response=rejected]]] end:end
+[NEXTPLAYER]
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[endturn][unitid=5 gameid=OXOGAMEIDOXO]]] end:end
+
+[COMMENT] An accapted empty trade from unit 5 to unit 7
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[trade][gameid=OXOGAMEIDOXO tradeoffererunitid=5 tradepartnerunitid=7 givegoods=[0,0,0,0,0] getgoods=[0,0,0,0,0]]]] end:end
+[NEXTPLAYER]
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[reply][[tradereply][gameid=OXOGAMEIDOXO response=accepted]]] end:end
+[NEXTPLAYER]
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[endturn][unitid=5 gameid=OXOGAMEIDOXO]]] end:end
+
+[COMMENT] Unit 9 offering a present to tradestation 103
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[trade][gameid=OXOGAMEIDOXO tradeoffererunitid=9 tradepartnerunitid=103 givegoods=[1,0,5,0,5] getgoods=[0,0,0,0,0]]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[endturn][unitid=9 gameid=OXOGAMEIDOXO]]] end:end
+
+[COMMENT] Unit 10 offering a ratio with a litte present to tradestation 333 (Causes Error. Why?)
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[trade][gameid=OXOGAMEIDOXO tradeoffererunitid=10 tradepartnerunitid=333 givegoods=[5,5,0,0,0] getgoods=[0,0,0,10,0]]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[endturn][unitid=10 gameid=OXOGAMEIDOXO]]] end:end
+
+[NEXTPLAYER]
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=unitinfo unitid=5 gameid=OXOGAMEIDOXO]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=unitinfo unitid=6 gameid=OXOGAMEIDOXO]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=unitinfo unitid=7 gameid=OXOGAMEIDOXO]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=unitinfo unitid=8 gameid=OXOGAMEIDOXO]] end:end
+[NEXTPLAYER]
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=unitinfo unitid=5 gameid=OXOGAMEIDOXO]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=unitinfo unitid=6 gameid=OXOGAMEIDOXO]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=unitinfo unitid=7 gameid=OXOGAMEIDOXO]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=unitinfo unitid=8 gameid=OXOGAMEIDOXO]] end:end
+[NEXTPLAYER]
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=gameinfo gameid=OXOGAMEIDOXO]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[info][infotype=tradestations mapid=Tradestation_Trade]] end:end
+
+[COMMENT] Next Script: GameOrder test
+[COMMENT] get some infos
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[info][infotype=maplist]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[info][infotype=mappreview mapid=Two]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[info][infotype=winconditions mapid=Two]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[info][infotype=mappreview mapid=Tradestation]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[info][infotype=winconditions mapid=Tradestation]] end:end
+
+[COMMENT] Create and start a new game
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[option][[creategame][mapid=Tradestation gamename=OXONEWGAMENAMEOXO gameownerkey=OXOGAMEKEYOXO]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[info][infotype=gamelist]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[option][[addplayer][gameid=OXOGAMEIDOXO playername=OXOPLAYERNAMEOXO]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[info][infotype=unittype mapid=POV]] end:end
+[NEXTPLAYER]
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[option][[addplayer][gameid=OXOGAMEIDOXO playername=OXOPLAYERNAMEOXO]]] end:end
+[NEXTPLAYER]
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=gameinfo gameid=OXOGAMEIDOXO]] end:end
+[NEXTPLAYER]
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[option][[startgame][gameid=OXOGAMEIDOXO gameownerkey=OXOGAMEKEYOXO]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=terrainmap gameid=OXOGAMEIDOXO]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=unitmap gameid=OXOGAMEIDOXO]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=gameinfo gameid=OXOGAMEIDOXO]] end:end
+[NEXTPLAYER]
+
+[COMMENT] get some unitInfos
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=unitinfo unitid=5 gameid=OXOGAMEIDOXO]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=unitinfo unitid=6 gameid=OXOGAMEIDOXO]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=unitinfo unitid=7 gameid=OXOGAMEIDOXO]] end:end
+[NEXTPLAYER]
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=unitinfo unitid=5 gameid=OXOGAMEIDOXO]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=unitinfo unitid=6 gameid=OXOGAMEIDOXO]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=unitinfo unitid=7 gameid=OXOGAMEIDOXO]] end:end
+[NEXTPLAYER]
+
+[COMMENT] Testing: Move after Move
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[move][unitid=6 path=[[14,17][13,18]] gameid=OXOGAMEIDOXO]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[move][unitid=6 path=[[13,19][12,19]] gameid=OXOGAMEIDOXO]]] end:end
+
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[endturn][unitid=6 gameid=OXOGAMEIDOXO]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=gameinfo gameid=OXOGAMEIDOXO]] end:end
+[NEXTPLAYER]
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=gameinfo gameid=OXOGAMEIDOXO]] end:end
+
+[COMMENT] Testing: Illegal Moves
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[move][unitid=7 path=[[23,16][23,17][23,18][23,19][23,20][23,21][23,22][21,18][21,19][20,19]] gameid=OXOGAMEIDOXO]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[move][unitid=7 path=[[21,16][21,17][21,18][21,19][20,19]] gameid=OXOGAMEIDOXO]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[move][unitid=7 path=[[21,19][21,18][21,17][21,16]] gameid=OXOGAMEIDOXO]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[attack][attackerid=7 defenderid=5 gameid=OXOGAMEIDOXO]]] end:end
+
+[COMMENT] Testing: Actions after Attack
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[attack][attackerid=7 defenderid=5 gameid=OXOGAMEIDOXO]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[move][unitid=7 path=[[21,19][21,18][21,17][21,16]] gameid=OXOGAMEIDOXO]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[trade][gameid=OXOGAMEIDOXO tradeoffererunitid=7 tradepartnerunitid=5 givegoods=[1,0,0,0,0] getgoods=[0,0,0,0,1]]]] end:end
+
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[endturn][unitid=7 gameid=OXOGAMEIDOXO]]] end:end
+[NEXTPLAYER]
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=gameinfo gameid=OXOGAMEIDOXO]] end:end
+
+[COMMENT] Testing: Actions after Trade
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[trade][gameid=OXOGAMEIDOXO tradeoffererunitid=6 tradepartnerunitid=7 givegoods=[1,0,0,0,0] getgoods=[0,0,0,0,1]]]] end:end
+[NEXTPLAYER]
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[reply][[tradereply][gameid=OXOGAMEIDOXO response=accepted]]] end:end
+[NEXTPLAYER]
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[attack][attackerid=6 defenderid=5 gameid=OXOGAMEIDOXO]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[move][unitid=6 path=[[21,19][21,18][21,17][21,16]] gameid=OXOGAMEIDOXO]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[trade][gameid=OXOGAMEIDOXO tradeoffererunitid=6 tradepartnerunitid=7 givegoods=[1,0,0,0,0] getgoods=[0,0,0,0,1]]]] end:end
+
+[NEXTPLAYER]
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=unitinfo unitid=5 gameid=OXOGAMEIDOXO]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=unitinfo unitid=6 gameid=OXOGAMEIDOXO]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=unitinfo unitid=7 gameid=OXOGAMEIDOXO]] end:end
+[NEXTPLAYER]
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=unitinfo unitid=5 gameid=OXOGAMEIDOXO]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=unitinfo unitid=6 gameid=OXOGAMEIDOXO]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=unitinfo unitid=7 gameid=OXOGAMEIDOXO]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=gameinfo gameid=OXOGAMEIDOXO]] end:end
+[NEXTPLAYER]
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=gameinfo gameid=OXOGAMEIDOXO]] end:end
+[NEXTPLAYER]
+
+[COMMENT] NoQuad test
+
+[COMMENT] Create and remove game NoQuad 
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[info][infotype=mappreview mapid=NoQuad]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[option][[creategame][mapid=NoQuad gamename=OXONEWGAMENAMEOXO gameownerkey=OXOGAMEKEYOXO]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[info][infotype=gamelist]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[option][[removegame][gameid=OXOGAMEIDOXO gameownerkey=OXOGAMEKEYOXO]]] end:end
+
+[COMMENT] Create and remove game NoQuad_Smaller
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[info][infotype=mappreview mapid=NoQuad_Smaller]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[option][[creategame][mapid=NoQuad_Smaller gamename=OXONEWGAMENAMEOXO gameownerkey=OXOGAMEKEYOXO]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[info][infotype=gamelist]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[option][[removegame][gameid=OXOGAMEIDOXO gameownerkey=OXOGAMEKEYOXO]]] end:end
+
+[COMMENT] Create and remove game NoQuad_Bigger 
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[info][infotype=mappreview mapid=NoQuad_Bigger]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[option][[creategame][mapid=NoQuad_Bigger gamename=OXONEWGAMENAMEOXO gameownerkey=OXOGAMEKEYOXO]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[info][infotype=gamelist]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[option][[removegame][gameid=OXOGAMEIDOXO gameownerkey=OXOGAMEKEYOXO]]] end:end
+
+[COMMENT] Create and remove game POV
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[info][infotype=mappreview mapid=POV]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[option][[creategame][mapid=POV gamename=OXONEWGAMENAMEOXO gameownerkey=OXOGAMEKEYOXO]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[info][infotype=gamelist]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[option][[removegame][gameid=OXOGAMEIDOXO gameownerkey=OXOGAMEKEYOXO]]] end:end
+
+[COMMENT] Create and start game NoQuad_Samllest 
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[info][infotype=mappreview mapid=NoQuad_Smallest]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[option][[creategame][mapid=NoQuad_Smallest gamename=OXONEWGAMENAMEOXO gameownerkey=OXOGAMEKEYOXO]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[info][infotype=gamelist]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[option][[addplayer][gameid=OXOGAMEIDOXO playername=OXOPLAYERNAMEOXO]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[info][infotype=unittype mapid=POV]] end:end
+[NEXTPLAYER]
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[option][[addplayer][gameid=OXOGAMEIDOXO playername=OXOPLAYERNAMEOXO]]] end:end
+[NEXTPLAYER]
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=gameinfo gameid=OXOGAMEIDOXO]] end:end
+[NEXTPLAYER]
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[option][[startgame][gameid=OXOGAMEIDOXO gameownerkey=OXOGAMEKEYOXO]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=gameinfo gameid=OXOGAMEIDOXO]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[request][rtype=unitinfo unitid=7 gameid=OXOGAMEIDOXO]] end:end
+
+[COMMENT] Playgame smallest (no errors until game_ended)
+[NEXTPLAYER]
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[attack][attackerid=4 defenderid=7 gameid=OXOGAMEIDOXO]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[endturn][unitid=4 gameid=OXOGAMEIDOXO]]] end:end
+[NEXTPLAYER]
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[attack][attackerid=7 defenderid=4 gameid=OXOGAMEIDOXO]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[endturn][unitid=7 gameid=OXOGAMEIDOXO]]] end:end
+[NEXTPLAYER]
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[attack][attackerid=4 defenderid=7 gameid=OXOGAMEIDOXO]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[endturn][unitid=4 gameid=OXOGAMEIDOXO]]] end:end
+[NEXTPLAYER]
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[attack][attackerid=7 defenderid=4 gameid=OXOGAMEIDOXO]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[endturn][unitid=7 gameid=OXOGAMEIDOXO]]] end:end
+[NEXTPLAYER]
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[attack][attackerid=4 defenderid=7 gameid=OXOGAMEIDOXO]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[endturn][unitid=4 gameid=OXOGAMEIDOXO]]] end:end
+[NEXTPLAYER]
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[attack][attackerid=7 defenderid=4 gameid=OXOGAMEIDOXO]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[endturn][unitid=7 gameid=OXOGAMEIDOXO]]] end:end
+[NEXTPLAYER]
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[attack][attackerid=4 defenderid=7 gameid=OXOGAMEIDOXO]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[endturn][unitid=4 gameid=OXOGAMEIDOXO]]] end:end
+[NEXTPLAYER]
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[attack][attackerid=7 defenderid=4 gameid=OXOGAMEIDOXO]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[endturn][unitid=7 gameid=OXOGAMEIDOXO]]] end:end
+[NEXTPLAYER]
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[attack][attackerid=4 defenderid=7 gameid=OXOGAMEIDOXO]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[endturn][unitid=4 gameid=OXOGAMEIDOXO]]] end:end
+[NEXTPLAYER]
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[attack][attackerid=7 defenderid=4 gameid=OXOGAMEIDOXO]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[endturn][unitid=7 gameid=OXOGAMEIDOXO]]] end:end
+[NEXTPLAYER]
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[attack][attackerid=4 defenderid=7 gameid=OXOGAMEIDOXO]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[endturn][unitid=4 gameid=OXOGAMEIDOXO]]] end:end
+[NEXTPLAYER]
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[attack][attackerid=7 defenderid=4 gameid=OXOGAMEIDOXO]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[endturn][unitid=7 gameid=OXOGAMEIDOXO]]] end:end
+[NEXTPLAYER]
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[attack][attackerid=4 defenderid=7 gameid=OXOGAMEIDOXO]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[endturn][unitid=4 gameid=OXOGAMEIDOXO]]] end:end
+[NEXTPLAYER]
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[attack][attackerid=7 defenderid=4 gameid=OXOGAMEIDOXO]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[endturn][unitid=7 gameid=OXOGAMEIDOXO]]] end:end
+[NEXTPLAYER]
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[attack][attackerid=4 defenderid=7 gameid=OXOGAMEIDOXO]]] end:end
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO playerid:OXOPLAYERIDOXO data[[action][[endturn][unitid=4 gameid=OXOGAMEIDOXO]]] end:end
+[NEXTPLAYER]
+type:sendgamedata clientid:OXOCLIENTIDOXO clientkey:OXOCLIENTKEYOXO data[[option][[removegame][gameid=OXOGAMEIDOXO gameownerkey=OXOGAMEKEYOXO]]] end:end

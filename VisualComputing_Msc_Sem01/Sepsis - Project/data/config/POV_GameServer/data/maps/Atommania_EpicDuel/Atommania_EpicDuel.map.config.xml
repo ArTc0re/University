@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!-- Version AB 1.2 -->
+<map-config>
+	<name>Atommania_EpicDuel</name>
+	<hexmapcsv>EpicDuel.terrain.map.csv</hexmapcsv>
+</map-config>

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!-- Version AB 3.0 -->
+<meeple-setup>
+<!-- 
+	Setup of Unit
+-->
+	<meeple>
+		<id>1</id>
+		<type>fighterheavy</type>
+		<ownerindex>1</ownerindex>
+		<positionx>2</positionx>
+		<positiony>2</positiony>
+		<cargo1>7</cargo1>
+		<cargo2>7</cargo2>
+		<cargo3>7</cargo3>
+		<cargo4>7</cargo4>
+		<cargo5>7</cargo5>
+		<hitpoints>80</hitpoints>
+	</meeple>
+	<meeple>
+		<id>2</id>
+		<type>fighterheavy</type>
+		<ownerindex>0</ownerindex>
+		<positionx>22</positionx>
+		<positiony>22</positiony>
+		<cargo1>7</cargo1>
+		<cargo2>7</cargo2>
+		<cargo3>7</cargo3>
+		<cargo4>7</cargo4>
+		<cargo5>7</cargo5>
+	</meeple>
+</meeple-setup>

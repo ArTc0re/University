@@ -1,0 +1,377 @@
+<?xml version="1.0"?>
+<!-- Version AB 3.0 -->
+<meeple-setup>
+
+	<!-- Player 0 -->
+
+	<meeple>
+		<id>1</id>
+		<type>fightermedium</type>
+		<ownerindex>0</ownerindex>
+		<positionx>4</positionx>
+		<positiony>1</positiony>
+		<cargo1>10</cargo1>
+		<cargo2>0</cargo2>
+		<cargo3>0</cargo3>
+		<cargo4>0</cargo4>
+		<cargo5>0</cargo5>
+	</meeple>
+
+	<meeple>
+		<id>2</id>
+		<type>fightermedium</type>
+		<ownerindex>0</ownerindex>
+		<positionx>1</positionx>
+		<positiony>7</positiony>
+		<cargo1>10</cargo1>
+		<cargo2>0</cargo2>
+		<cargo3>0</cargo3>
+		<cargo4>0</cargo4>
+		<cargo5>0</cargo5>
+	</meeple>	
+
+	<meeple>
+		<id>3</id>
+		<type>fightersmall</type>
+		<ownerindex>0</ownerindex>
+		<positionx>7</positionx>
+		<positiony>1</positiony>
+		<cargo1>10</cargo1>
+		<cargo2>0</cargo2>
+		<cargo3>0</cargo3>
+		<cargo4>0</cargo4>
+		<cargo5>0</cargo5>
+	</meeple>
+
+	<meeple>
+		<id>4</id>
+		<type>fightersmall</type>
+		<ownerindex>0</ownerindex>
+		<positionx>1</positionx>
+		<positiony>9</positiony>
+		<cargo1>10</cargo1>
+		<cargo2>0</cargo2>
+		<cargo3>0</cargo3>
+		<cargo4>0</cargo4>
+		<cargo5>0</cargo5>
+	</meeple>
+
+	<meeple>
+		<id>5</id>
+		<type>fightersmall</type>
+		<ownerindex>0</ownerindex>
+		<positionx>5</positionx>
+		<positiony>5</positiony>
+		<cargo1>10</cargo1>
+		<cargo2>0</cargo2>
+		<cargo3>0</cargo3>
+		<cargo4>0</cargo4>
+		<cargo5>0</cargo5>
+	</meeple>
+
+	<meeple>
+		<id>6</id>
+		<type>cargoheavy</type>
+		<ownerindex>0</ownerindex>
+		<positionx>2</positionx>
+		<positiony>1</positiony>
+		<cargo1>50</cargo1>
+		<cargo2>0</cargo2>
+		<cargo3>0</cargo3>
+		<cargo4>0</cargo4>
+		<cargo5>0</cargo5>
+	</meeple>
+
+	
+	<!-- Player 1 -->
+
+	<meeple>
+		<id>7</id>
+		<type>fightermedium</type>
+		<ownerindex>1</ownerindex>
+		<positionx>15</positionx>
+		<positiony>1</positiony>
+		<cargo1>10</cargo1>
+		<cargo2>0</cargo2>
+		<cargo3>0</cargo3>
+		<cargo4>0</cargo4>
+		<cargo5>0</cargo5>
+	</meeple>
+
+	<meeple>
+		<id>8</id>
+		<type>fightermedium</type>
+		<ownerindex>1</ownerindex>
+		<positionx>18</positionx>
+		<positiony>7</positiony>
+		<cargo1>10</cargo1>
+		<cargo2>0</cargo2>
+		<cargo3>0</cargo3>
+		<cargo4>0</cargo4>
+		<cargo5>0</cargo5>
+	</meeple>	
+
+	<meeple>
+		<id>9</id>
+		<type>fightersmall</type>
+		<ownerindex>1</ownerindex>
+		<positionx>12</positionx>
+		<positiony>1</positiony>
+		<cargo1>10</cargo1>
+		<cargo2>0</cargo2>
+		<cargo3>0</cargo3>
+		<cargo4>0</cargo4>
+		<cargo5>0</cargo5>
+	</meeple>
+
+	<meeple>
+		<id>10</id>
+		<type>fightersmall</type>
+		<ownerindex>1</ownerindex>
+		<positionx>18</positionx>
+		<positiony>9</positiony>
+		<cargo1>10</cargo1>
+		<cargo2>0</cargo2>
+		<cargo3>0</cargo3>
+		<cargo4>0</cargo4>
+		<cargo5>0</cargo5>
+	</meeple>
+
+	<meeple>
+		<id>11</id>
+		<type>fightersmall</type>
+		<ownerindex>1</ownerindex>
+		<positionx>14</positionx>
+		<positiony>5</positiony>
+		<cargo1>10</cargo1>
+		<cargo2>0</cargo2>
+		<cargo3>0</cargo3>
+		<cargo4>0</cargo4>
+		<cargo5>0</cargo5>
+	</meeple>
+
+	<meeple>
+		<id>12</id>
+		<type>cargoheavy</type>
+		<ownerindex>1</ownerindex>
+		<positionx>17</positionx>
+		<positiony>1</positiony>
+		<cargo1>50</cargo1>
+		<cargo2>0</cargo2>
+		<cargo3>0</cargo3>
+		<cargo4>0</cargo4>
+		<cargo5>0</cargo5>
+	</meeple>
+
+
+	<!-- Player 2 -->
+
+	<meeple>
+		<id>13</id>
+		<type>fightermedium</type>
+		<ownerindex>2</ownerindex>
+		<positionx>15</positionx>
+		<positiony>18</positiony>
+		<cargo1>10</cargo1>
+		<cargo2>0</cargo2>
+		<cargo3>0</cargo3>
+		<cargo4>0</cargo4>
+		<cargo5>0</cargo5>
+	</meeple>
+
+	<meeple>
+		<id>14</id>
+		<type>fightermedium</type>
+		<ownerindex>2</ownerindex>
+		<positionx>18</positionx>
+		<positiony>12</positiony>
+		<cargo1>10</cargo1>
+		<cargo2>0</cargo2>
+		<cargo3>0</cargo3>
+		<cargo4>0</cargo4>
+		<cargo5>0</cargo5>
+	</meeple>	
+
+	<meeple>
+		<id>15</id>
+		<type>fightersmall</type>
+		<ownerindex>2</ownerindex>
+		<positionx>18</positionx>
+		<positiony>10</positiony>
+		<cargo1>10</cargo1>
+		<cargo2>0</cargo2>
+		<cargo3>0</cargo3>
+		<cargo4>0</cargo4>
+		<cargo5>0</cargo5>
+	</meeple>
+
+	<meeple>
+		<id>16</id>
+		<type>fightersmall</type>
+		<ownerindex>2</ownerindex>
+		<positionx>14</positionx>
+		<positiony>14</positiony>
+		<cargo1>10</cargo1>
+		<cargo2>0</cargo2>
+		<cargo3>0</cargo3>
+		<cargo4>0</cargo4>
+		<cargo5>0</cargo5>
+	</meeple>
+
+	<meeple>
+		<id>17</id>
+		<type>fightersmall</type>
+		<ownerindex>2</ownerindex>
+		<positionx>12</positionx>
+		<positiony>18</positiony>
+		<cargo1>10</cargo1>
+		<cargo2>0</cargo2>
+		<cargo3>0</cargo3>
+		<cargo4>0</cargo4>
+		<cargo5>0</cargo5>
+	</meeple>
+
+	<meeple>
+		<id>18</id>
+		<type>cargoheavy</type>
+		<ownerindex>2</ownerindex>
+		<positionx>17</positionx>
+		<positiony>18</positiony>
+		<cargo1>50</cargo1>
+		<cargo2>0</cargo2>
+		<cargo3>0</cargo3>
+		<cargo4>0</cargo4>
+		<cargo5>0</cargo5>
+	</meeple>
+
+
+	<!-- Player 3 -->
+
+	<meeple>
+		<id>19</id>
+		<type>fightermedium</type>
+		<ownerindex>3</ownerindex>
+		<positionx>1</positionx>
+		<positiony>12</positiony>
+		<cargo1>10</cargo1>
+		<cargo2>0</cargo2>
+		<cargo3>0</cargo3>
+		<cargo4>0</cargo4>
+		<cargo5>0</cargo5>
+	</meeple>
+
+	<meeple>
+		<id>20</id>
+		<type>fightermedium</type>
+		<ownerindex>3</ownerindex>
+		<positionx>4</positionx>
+		<positiony>18</positiony>
+		<cargo1>10</cargo1>
+		<cargo2>0</cargo2>
+		<cargo3>0</cargo3>
+		<cargo4>0</cargo4>
+		<cargo5>0</cargo5>
+	</meeple>	
+
+	<meeple>
+		<id>21</id>
+		<type>fightersmall</type>
+		<ownerindex>3</ownerindex>
+		<positionx>7</positionx>
+		<positiony>18</positiony>
+		<cargo1>10</cargo1>
+		<cargo2>0</cargo2>
+		<cargo3>0</cargo3>
+		<cargo4>0</cargo4>
+		<cargo5>0</cargo5>
+	</meeple>
+
+	<meeple>
+		<id>22</id>
+		<type>fightersmall</type>
+		<ownerindex>3</ownerindex>
+		<positionx>5</positionx>
+		<positiony>14</positiony>
+		<cargo1>10</cargo1>
+		<cargo2>0</cargo2>
+		<cargo3>0</cargo3>
+		<cargo4>0</cargo4>
+		<cargo5>0</cargo5>
+	</meeple>
+
+	<meeple>
+		<id>23</id>
+		<type>fightersmall</type>
+		<ownerindex>3</ownerindex>
+		<positionx>1</positionx>
+		<positiony>10</positiony>
+		<cargo1>10</cargo1>
+		<cargo2>0</cargo2>
+		<cargo3>0</cargo3>
+		<cargo4>0</cargo4>
+		<cargo5>0</cargo5>
+	</meeple>
+
+	<meeple>
+		<id>24</id>
+		<type>cargoheavy</type>
+		<ownerindex>3</ownerindex>
+		<positionx>2</positionx>
+		<positiony>18</positiony>
+		<cargo1>50</cargo1>
+		<cargo2>0</cargo2>
+		<cargo3>0</cargo3>
+		<cargo4>0</cargo4>
+		<cargo5>0</cargo5>
+	</meeple>
+
+
+
+<!-- 
+	Fighterunits
+-->
+<!--
+	<meeple-type>
+		<type>fightersmall</type>
+		<movement>6</movement>
+		<hitpoints>200</hitpoints>	
+		<maxfirepower>100</maxfirepower>	
+		<maxcargo>10</maxcargo>	
+	</meeple-type>
+	<meeple-type>
+		<type>fightermedium</type>
+		<movement>4</movement>
+		<hitpoints>500</hitpoints>	
+		<maxfirepower>250</maxfirepower>	
+		<maxcargo>10</maxcargo>	
+	</meeple-type>
+	<meeple-type>
+		<type>fighterheavy</type>
+		<movement>2</movement>
+		<hitpoints>1000</hitpoints>	
+		<maxfirepower>500</maxfirepower>	
+		<maxcargo>10</maxcargo>	
+	</meeple-type>
+-->
+<!-- 
+	Cargounits
+-->
+<!--
+	<meeple-type>
+		<type>cargosmall</type>
+		<movement>3</movement>
+		<hitpoints>1000</hitpoints>	
+		<maxfirepower>1</maxfirepower>	
+		<maxcargo>50</maxcargo>	
+	</meeple-type>
+
+	<meeple-type>
+		<type>cargoheavy</type>
+		<movement>3</movement>
+		<hitpoints>1000</hitpoints>	
+		<maxfirepower>1</maxfirepower>	
+		<maxcargo>50</maxcargo>	
+	</meeple-type>
+-->
+
+</meeple-setup>

@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<!-- Version AB 1.2 -->
+<map-config>
+	<name>Virus</name>
+	<description>BitSquad_BitSquad Virus Map</description>
+	<winconditions>
+		<extinction>true</extinction>
+	</winconditions>
+</map-config>

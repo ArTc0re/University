@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<!-- Version AB 1.2 -->
+<map-config>
+	<name>Sepsis_Thievery</name>
+	<winconditions>
+		<extinction>true</extinction>
+		<goodplacements>
+			<neededconditions>1</neededconditions>
+			<goodplacement>
+				<good>2</good>
+				<amount>50</amount>	
+				<playerindex>0</playerindex>
+				<fieldx>18</fieldx>
+				<fieldy>1</fieldy>
+			</goodplacement>
+			<goodplacement>
+				<good>2</good>
+				<amount>50</amount>	
+				<playerindex>1</playerindex>
+				<fieldx>18</fieldx>
+				<fieldy>18</fieldy>
+			</goodplacement>
+		</goodplacements>
+	</winconditions>
+	<tradestations>
+		<tradestation>
+			<stationid>Hostage_One</stationid>
+			<unitid>101</unitid>
+			<friendlyplayerindices>1</friendlyplayerindices>
+			<posx>1</posx>
+			<posy>1</posy>
+			<termsoftrade>
+					<!-- Relativ zu einer fiktiven Einheit  --> 
+					<tradeequivalence1>1</tradeequivalence1>
+					<tradeequivalence2>1</tradeequivalence2>
+					<tradeequivalence3>1</tradeequivalence3>
+					<tradeequivalence4>1</tradeequivalence4>
+					<tradeequivalence5>1</tradeequivalence5>
+					<availablegoods1>0</availablegoods1>
+					<availablegoods2>1000</availablegoods2>
+					<availablegoods3>0</availablegoods3>
+					<availablegoods4>0</availablegoods4>
+					<availablegoods5>0</availablegoods5>
+			</termsoftrade>
+		</tradestation>
+		<tradestation>
+			<stationid>Hostage_Two</stationid>
+			<unitid>102</unitid>
+			<friendlyplayerindices>0</friendlyplayerindices>
+			<posx>1</posx>
+			<posy>18</posy>
+			<termsoftrade>
+					<!-- Relativ zu einer fiktiven Einheit  --> 
+					<tradeequivalence1>1</tradeequivalence1>
+					<tradeequivalence2>1</tradeequivalence2>
+					<tradeequivalence3>1</tradeequivalence3>
+					<tradeequivalence4>1</tradeequivalence4>
+					<tradeequivalence5>1</tradeequivalence5>
+					<availablegoods1>0</availablegoods1>
+					<availablegoods2>1000</availablegoods2>
+					<availablegoods3>0</availablegoods3>
+					<availablegoods4>0</availablegoods4>
+					<availablegoods5>0</availablegoods5>
+			</termsoftrade>
+		</tradestation>
+	</tradestations>
+</map-config>

@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<!-- Version AB 3.0 -->
+<meeple-config>
+<!-- 
+	Fighterunits
+-->
+	<meeple-type>
+		<type>fightersmall</type>
+		<movement>10</movement>
+		<hitpoints>200</hitpoints>	
+		<maxfirepower>125</maxfirepower>	
+		<maxcargo>5</maxcargo>	
+	</meeple-type>
+	<meeple-type>
+		<type>fightermedium</type>
+		<movement>7</movement>
+		<hitpoints>400</hitpoints>	
+		<maxfirepower>250</maxfirepower>	
+		<maxcargo>5</maxcargo>	
+	</meeple-type>
+	<meeple-type>
+		<type>fighterheavy</type>
+		<movement>4</movement>
+		<hitpoints>1000</hitpoints>	
+		<maxfirepower>500</maxfirepower>	
+		<maxcargo>10</maxcargo>	
+	</meeple-type>
+<!-- 
+	Cargounits
+-->
+	<meeple-type>
+		<type>cargosmall</type>
+		<movement>6</movement>
+		<hitpoints>100</hitpoints>	
+		<maxfirepower>50</maxfirepower>	
+		<maxcargo>100</maxcargo>	
+	</meeple-type>
+
+	<meeple-type>
+		<type>cargoheavy</type>
+		<movement>3</movement>
+		<hitpoints>200</hitpoints>	
+		<maxfirepower>50</maxfirepower>	
+		<maxcargo>200</maxcargo>	
+	</meeple-type>
+
+</meeple-config>
